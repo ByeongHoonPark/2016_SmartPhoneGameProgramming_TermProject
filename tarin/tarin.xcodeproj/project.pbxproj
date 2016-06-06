@@ -12,6 +12,12 @@
 		A11D956F1CFAC1630002B73D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11D956D1CFAC1630002B73D /* Main.storyboard */; };
 		A11D95711CFAC1630002B73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11D95701CFAC1630002B73D /* Assets.xcassets */; };
 		A11D95741CFAC1630002B73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11D95721CFAC1630002B73D /* LaunchScreen.storyboard */; };
+		A147B3291D05576C00E18A48 /* ParseHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A147B3281D05576C00E18A48 /* ParseHandle.swift */; };
+		A147B32D1D05689900E18A48 /* stationData.xml in Resources */ = {isa = PBXBuildFile; fileRef = A147B32B1D05689900E18A48 /* stationData.xml */; };
+		A147B3311D05706200E18A48 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A147B3301D05706200E18A48 /* LineView.swift */; };
+		A147B3381D0595B700E18A48 /* _pin.png in Resources */ = {isa = PBXBuildFile; fileRef = A147B3361D0595B700E18A48 /* _pin.png */; };
+		A147B3391D0595B700E18A48 /* _tube-scheme.png in Resources */ = {isa = PBXBuildFile; fileRef = A147B3371D0595B700E18A48 /* _tube-scheme.png */; };
+		A147B33B1D0597DC00E18A48 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A147B33A1D0597DC00E18A48 /* SearchTableViewController.swift */; };
 		A1D438D71D042225002173B3 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D61D042225002173B3 /* route.png */; };
 		A1D438DA1D0424B4002173B3 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D91D0424B4002173B3 /* question.png */; };
 		A1D438DC1D042540002173B3 /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438DB1D042540002173B3 /* train.png */; };
@@ -27,6 +33,12 @@
 		A11D95701CFAC1630002B73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11D95731CFAC1630002B73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11D95751CFAC1630002B73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A147B3281D05576C00E18A48 /* ParseHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHandle.swift; sourceTree = "<group>"; };
+		A147B32B1D05689900E18A48 /* stationData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = stationData.xml; path = tarin/stationData.xml; sourceTree = "<group>"; };
+		A147B3301D05706200E18A48 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		A147B3361D0595B700E18A48 /* _pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _pin.png; sourceTree = "<group>"; };
+		A147B3371D0595B700E18A48 /* _tube-scheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "_tube-scheme.png"; sourceTree = "<group>"; };
+		A147B33A1D0597DC00E18A48 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		A1D438D61D042225002173B3 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route.png; path = tarin/images/route.png; sourceTree = "<group>"; };
 		A1D438D91D0424B4002173B3 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = question.png; path = tarin/images/question.png; sourceTree = "<group>"; };
 		A1D438DB1D042540002173B3 /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = train.png; path = tarin/images/train.png; sourceTree = "<group>"; };
@@ -48,6 +60,7 @@
 		A11D955D1CFAC1630002B73D = {
 			isa = PBXGroup;
 			children = (
+				A147B3271D05574600E18A48 /* Parse */,
 				A1D438D81D04222C002173B3 /* images */,
 				A11D95681CFAC1630002B73D /* tarin */,
 				A11D95671CFAC1630002B73D /* Products */,
@@ -72,13 +85,26 @@
 				A11D95721CFAC1630002B73D /* LaunchScreen.storyboard */,
 				A11D95751CFAC1630002B73D /* Info.plist */,
 				A1D438DF1D042BC8002173B3 /* TrainLineViewController.swift */,
+				A147B3301D05706200E18A48 /* LineView.swift */,
+				A147B33A1D0597DC00E18A48 /* SearchTableViewController.swift */,
 			);
 			path = tarin;
+			sourceTree = "<group>";
+		};
+		A147B3271D05574600E18A48 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				A147B3281D05576C00E18A48 /* ParseHandle.swift */,
+				A147B32B1D05689900E18A48 /* stationData.xml */,
+			);
+			name = Parse;
 			sourceTree = "<group>";
 		};
 		A1D438D81D04222C002173B3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A147B3361D0595B700E18A48 /* _pin.png */,
+				A147B3371D0595B700E18A48 /* _tube-scheme.png */,
 				A1D438DB1D042540002173B3 /* train.png */,
 				A1D438D91D0424B4002173B3 /* question.png */,
 				A1D438D61D042225002173B3 /* route.png */,
@@ -147,8 +173,11 @@
 			files = (
 				A1D438DE1D04298C002173B3 /* linemap_naver.png in Resources */,
 				A1D438DA1D0424B4002173B3 /* question.png in Resources */,
+				A147B3381D0595B700E18A48 /* _pin.png in Resources */,
 				A11D95741CFAC1630002B73D /* LaunchScreen.storyboard in Resources */,
+				A147B32D1D05689900E18A48 /* stationData.xml in Resources */,
 				A1D438DC1D042540002173B3 /* train.png in Resources */,
+				A147B3391D0595B700E18A48 /* _tube-scheme.png in Resources */,
 				A11D95711CFAC1630002B73D /* Assets.xcassets in Resources */,
 				A11D956F1CFAC1630002B73D /* Main.storyboard in Resources */,
 				A1D438D71D042225002173B3 /* route.png in Resources */,
@@ -163,8 +192,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D438E01D042BC8002173B3 /* TrainLineViewController.swift in Sources */,
+				A147B33B1D0597DC00E18A48 /* SearchTableViewController.swift in Sources */,
 				A11D956C1CFAC1630002B73D /* ViewController.swift in Sources */,
 				A11D956A1CFAC1630002B73D /* AppDelegate.swift in Sources */,
+				A147B3311D05706200E18A48 /* LineView.swift in Sources */,
+				A147B3291D05576C00E18A48 /* ParseHandle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
