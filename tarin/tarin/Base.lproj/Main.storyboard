@@ -132,11 +132,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="phj-a4-qhk" appends="YES" id="uMd-VN-UZ3"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02t-to-ceX" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="529" y="81" width="240" height="128"/>
@@ -149,11 +153,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zym-Lb-ipm" appends="YES" id="dNl-ba-GOL"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-t9-o7m" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="264" y="81" width="240" height="128"/>
@@ -166,11 +174,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fnF-BB-Jx0" appends="YES" id="Kar-Cx-4Hd"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBM-dw-Clo" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="-1" y="234" width="240" height="128"/>
@@ -183,11 +195,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rp4-3E-Lp6" appends="YES" id="EzO-7z-b5A"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-ze-Vlh" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="529" y="234" width="240" height="128"/>
@@ -200,11 +216,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gx2-Tf-TO9" appends="YES" id="zL4-nu-TEd"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kbr-Gh-1L1" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="264" y="234" width="240" height="128"/>
@@ -217,11 +237,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zXt-S4-QA0" appends="YES" id="Wi2-BO-2hH"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcW-7R-OSA" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="-1" y="387" width="240" height="128"/>
@@ -234,11 +258,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iWZ-yz-elM" appends="YES" id="0Oh-51-xuz"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9T-Vz-boA" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="529" y="387" width="240" height="128"/>
@@ -251,11 +279,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="9"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ktb-dx-MIi" appends="YES" id="Wol-OM-iRC"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Goc-0a-aeh" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="264" y="387" width="240" height="128"/>
@@ -268,11 +300,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8yf-vd-BDT" appends="YES" id="mDA-PR-0FQ"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-3b-Zv7" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="-1" y="544" width="240" height="128"/>
@@ -285,11 +321,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zdm-hf-3zM" appends="YES" id="92c-lR-1ah"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3R-0C-fQ9" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="529" y="544" width="240" height="128"/>
@@ -302,11 +342,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cen-Pw-Csa" appends="YES" id="o7f-2p-s83"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9M-Sb-dfM" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="264" y="544" width="240" height="128"/>
@@ -319,11 +363,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F0b-xn-5D6" appends="YES" id="H70-6C-D33"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-gn-ooE" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="-1" y="843" width="240" height="128"/>
@@ -336,11 +384,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zuU-jv-nUi" appends="YES" id="gsQ-ab-mhM"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGy-fs-zEj" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="529" y="843" width="240" height="128"/>
@@ -353,11 +405,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7C5-GO-QFO" appends="YES" id="CVg-kI-9A5"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3I-mX-alT" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="264" y="843" width="240" height="128"/>
@@ -370,11 +426,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ObP-93-DPM" appends="YES" id="gxO-GY-Vaw"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVq-Q7-w1H" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="-1" y="693" width="240" height="128"/>
@@ -387,11 +447,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KUe-lA-76b" appends="YES" id="H7J-ZW-jdW"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONI-mh-W4h" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="529" y="693" width="240" height="128"/>
@@ -404,11 +468,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CFS-ir-i22" appends="YES" id="6wr-Zu-HKt"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SeT-8C-cB5" customClass="LineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="264" y="693" width="240" height="128"/>
@@ -421,11 +489,15 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="line">
                                         <integer key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ROZ-iH-kn6" appends="YES" id="c2Q-hf-erS"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -434,8 +506,34 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTv-5r-VgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fnF-BB-Jx0" userLabel="2_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="gHa-hP-SI4" kind="show" id="zJg-83-fSV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Zym-Lb-ipm" userLabel="3_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="Rp4-3E-Lp6" userLabel="4_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="zXt-S4-QA0" userLabel="5_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="Gx2-Tf-TO9" userLabel="6_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="iWZ-yz-elM" userLabel="7_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="8yf-vd-BDT" userLabel="8_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="ktb-dx-MIi" userLabel="9_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="Zdm-hf-3zM" userLabel="신분당_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="F0b-xn-5D6" userLabel="분당_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="cen-Pw-Csa" userLabel="수인_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="KUe-lA-76b" userLabel="인천_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="ROZ-iH-kn6" userLabel="경춘_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="CFS-ir-i22" userLabel="경의중앙_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="zuU-jv-nUi" userLabel="공항_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="ObP-93-DPM" userLabel="의정부_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="7C5-GO-QFO" userLabel="에버라인_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="phj-a4-qhk" userLabel="1_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="gHa-hP-SI4" kind="show" id="OgE-Yk-hLV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2216" y="899"/>
+            <point key="canvasLocation" x="2310" y="437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="khi-VM-Y8J">
@@ -540,6 +638,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpN-rc-9ZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-13" y="-244"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fKD-0h-Cvg">
+            <objects>
+                <viewController id="gHa-hP-SI4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3lt-Jw-GdF"/>
+                        <viewControllerLayoutGuide type="bottom" id="4EZ-Y1-oeR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="coI-7N-Ghs">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gre-IZ-3sO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3061" y="2884"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="8R1-ld-IRM">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="RZx-L1-qEE" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Q3-qt-YJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ePo-b9-Wae">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ePo-b9-Wae" id="WlB-mm-ItF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RZx-L1-qEE" id="nfj-1T-YtA"/>
+                            <outlet property="delegate" destination="RZx-L1-qEE" id="Noi-jd-yob"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="JRK-lU-QIU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAN-sH-MJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3685" y="1304"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GvP-UO-BZt">
+            <objects>
+                <navigationController id="kOt-gv-cAv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g2f-38-TPe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RZx-L1-qEE" kind="relationship" relationship="rootViewController" id="81b-6p-1RO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9c-Ec-L5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="1304"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="5Nx-Zh-AHp">
+            <objects>
+                <splitViewController id="LbE-bf-gVk" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="kOt-gv-cAv" kind="relationship" relationship="masterViewController" id="jTy-8k-Osl"/>
+                        <segue destination="gHa-hP-SI4" kind="relationship" relationship="detailViewController" id="MvV-W5-Yvh"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOq-22-5vM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="1546"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="9xx-gm-cmH">
@@ -665,4 +841,7 @@
         <image name="route.png" width="512" height="512"/>
         <image name="train.png" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MvV-W5-Yvh"/>
+    </inferredMetricsTieBreakers>
 </document>
