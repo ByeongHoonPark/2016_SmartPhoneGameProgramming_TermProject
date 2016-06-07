@@ -39,6 +39,11 @@
 		A147B35C1D05A70100E18A48 /* 의정부경전철.png in Resources */ = {isa = PBXBuildFile; fileRef = A147B34B1D05A70100E18A48 /* 의정부경전철.png */; };
 		A147B35D1D05A70100E18A48 /* 인천지하철 1호선.png in Resources */ = {isa = PBXBuildFile; fileRef = A147B34C1D05A70100E18A48 /* 인천지하철 1호선.png */; };
 		A147B3601D05A8A600E18A48 /* StationLoaction.xml in Resources */ = {isa = PBXBuildFile; fileRef = A147B35F1D05A8A600E18A48 /* StationLoaction.xml */; };
+		A18DF3F11D06EFD4004F78AB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3F01D06EFD4004F78AB /* ResultViewController.swift */; };
+		A18DF3F41D071C43004F78AB /* down-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A18DF3F21D071C43004F78AB /* down-arrow.png */; };
+		A18DF3F51D071C43004F78AB /* up-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A18DF3F31D071C43004F78AB /* up-arrow.png */; };
+		A18DF3F71D071CE9004F78AB /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = A18DF3F61D071CE9004F78AB /* info.png */; };
+		A18DF3F91D0726D9004F78AB /* ResultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */; };
 		A1D438D71D042225002173B3 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D61D042225002173B3 /* route.png */; };
 		A1D438DA1D0424B4002173B3 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D91D0424B4002173B3 /* question.png */; };
 		A1D438DC1D042540002173B3 /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438DB1D042540002173B3 /* train.png */; };
@@ -81,6 +86,11 @@
 		A147B34B1D05A70100E18A48 /* 의정부경전철.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "의정부경전철.png"; sourceTree = "<group>"; };
 		A147B34C1D05A70100E18A48 /* 인천지하철 1호선.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "인천지하철 1호선.png"; sourceTree = "<group>"; };
 		A147B35F1D05A8A600E18A48 /* StationLoaction.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StationLoaction.xml; sourceTree = "<group>"; };
+		A18DF3F01D06EFD4004F78AB /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A18DF3F21D071C43004F78AB /* down-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow.png"; sourceTree = "<group>"; };
+		A18DF3F31D071C43004F78AB /* up-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow.png"; sourceTree = "<group>"; };
+		A18DF3F61D071CE9004F78AB /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTabBarController.swift; sourceTree = "<group>"; };
 		A1D438D61D042225002173B3 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route.png; path = tarin/images/route.png; sourceTree = "<group>"; };
 		A1D438D91D0424B4002173B3 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = question.png; path = tarin/images/question.png; sourceTree = "<group>"; };
 		A1D438DB1D042540002173B3 /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = train.png; path = tarin/images/train.png; sourceTree = "<group>"; };
@@ -131,6 +141,8 @@
 				A147B33A1D0597DC00E18A48 /* SearchTableViewController.swift */,
 				A1039D4B1D067B8E00EED94D /* SearchStationNameViewController.swift */,
 				A1039D4D1D067F8F00EED94D /* StationInfo.swift */,
+				A18DF3F01D06EFD4004F78AB /* ResultViewController.swift */,
+				A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */,
 			);
 			path = tarin;
 			sourceTree = "<group>";
@@ -173,12 +185,15 @@
 		A147B3611D05A8B500E18A48 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				A18DF3F21D071C43004F78AB /* down-arrow.png */,
+				A18DF3F31D071C43004F78AB /* up-arrow.png */,
 				A147B3361D0595B700E18A48 /* _pin.png */,
 				A147B3371D0595B700E18A48 /* _tube-scheme.png */,
 				A1D438DB1D042540002173B3 /* train.png */,
 				A1D438D91D0424B4002173B3 /* question.png */,
 				A1D438D61D042225002173B3 /* route.png */,
 				A1D438DD1D04298C002173B3 /* linemap_naver.png */,
+				A18DF3F61D071CE9004F78AB /* info.png */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -257,6 +272,7 @@
 				A147B3591D05A70100E18A48 /* 분당선.png in Resources */,
 				A147B35B1D05A70100E18A48 /* 신분당선.png in Resources */,
 				A147B3501D05A70100E18A48 /* 4.png in Resources */,
+				A18DF3F71D071CE9004F78AB /* info.png in Resources */,
 				A1D438DA1D0424B4002173B3 /* question.png in Resources */,
 				A147B3381D0595B700E18A48 /* _pin.png in Resources */,
 				A147B34E1D05A70100E18A48 /* 2.png in Resources */,
@@ -267,6 +283,7 @@
 				A147B3541D05A70100E18A48 /* 8.png in Resources */,
 				A1039D4A1D06766300EED94D /* 에버라인.png in Resources */,
 				A147B34D1D05A70100E18A48 /* 1.png in Resources */,
+				A18DF3F51D071C43004F78AB /* up-arrow.png in Resources */,
 				A147B3521D05A70100E18A48 /* 6.png in Resources */,
 				A147B34F1D05A70100E18A48 /* 3.png in Resources */,
 				A1D438DC1D042540002173B3 /* train.png in Resources */,
@@ -275,6 +292,7 @@
 				A11D95711CFAC1630002B73D /* Assets.xcassets in Resources */,
 				A1039D481D06738200EED94D /* stationData.xml in Resources */,
 				A11D956F1CFAC1630002B73D /* Main.storyboard in Resources */,
+				A18DF3F41D071C43004F78AB /* down-arrow.png in Resources */,
 				A147B35C1D05A70100E18A48 /* 의정부경전철.png in Resources */,
 				A147B3601D05A8A600E18A48 /* StationLoaction.xml in Resources */,
 				A1D438D71D042225002173B3 /* route.png in Resources */,
@@ -295,8 +313,10 @@
 				A11D956C1CFAC1630002B73D /* ViewController.swift in Sources */,
 				A11D956A1CFAC1630002B73D /* AppDelegate.swift in Sources */,
 				A1039D4C1D067B8E00EED94D /* SearchStationNameViewController.swift in Sources */,
+				A18DF3F91D0726D9004F78AB /* ResultTabBarController.swift in Sources */,
 				A147B3311D05706200E18A48 /* LineView.swift in Sources */,
 				A147B3291D05576C00E18A48 /* ParseHandle.swift in Sources */,
+				A18DF3F11D06EFD4004F78AB /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

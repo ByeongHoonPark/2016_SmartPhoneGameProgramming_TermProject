@@ -588,7 +588,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="B54-ye-Jdd" kind="show" id="jVw-YP-nPz"/>
+                                    <segue destination="bYZ-if-ycN" kind="show" identifier="StationListSelect" id="lpP-YG-uzE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -604,10 +604,10 @@
             </objects>
             <point key="canvasLocation" x="1161" y="1100"/>
         </scene>
-        <!--View Controller-->
+        <!--상행-->
         <scene sceneID="LoF-wU-nV5">
             <objects>
-                <viewController id="B54-ye-Jdd" sceneMemberID="viewController">
+                <viewController id="B54-ye-Jdd" customClass="ResultViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R1c-pU-96W"/>
                         <viewControllerLayoutGuide type="bottom" id="X4D-y5-7r6"/>
@@ -618,17 +618,39 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjh-qg-gXh" customClass="DetailLineView" customModule="tarin" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="117" width="768" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동대문역사문화공원" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-Ox-fXE">
+                                        <rect key="frame" x="274" y="38" width="273" height="43"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.png" translatesAutoresizingMaskIntoConstraints="NO" id="I7a-0c-Dls">
+                                        <rect key="frame" x="166" y="23" width="75" height="75"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="line">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="상행" image="up-arrow.png" id="nug-lT-2GN" userLabel="상행"/>
                     <navigationItem key="navigationItem" id="MKb-qT-qEZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="UIDesignView" destination="kjh-qg-gXh" id="s4T-68-agX"/>
+                        <outlet property="stationLineNumImage" destination="I7a-0c-Dls" id="jiC-S5-Dfz"/>
+                        <outlet property="stationNameLabel" destination="ocZ-Ox-fXE" id="X2V-sJ-Te8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pj-Ze-sbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="2277"/>
+            <point key="canvasLocation" x="194" y="3843"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="VwI-0E-muK">
@@ -680,7 +702,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ePo-b9-Wae" id="WlB-mm-ItF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -726,10 +748,10 @@
             </objects>
             <point key="canvasLocation" x="2111" y="1546"/>
         </scene>
-        <!--Item 2-->
+        <!--하행-->
         <scene sceneID="9xx-gm-cmH">
             <objects>
-                <viewController id="bbL-cb-M1z" sceneMemberID="viewController">
+                <viewController id="bbL-cb-M1z" customClass="ResultViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j52-UP-3aQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Dw9-Ra-eza"/>
@@ -737,18 +759,45 @@
                     <view key="view" contentMode="scaleToFill" id="HQU-Sk-a7g">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-Z3-Ijv" customClass="DetailLineView" customModule="tarin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="117" width="768" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동대문역사문화공원" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-pb-oHU">
+                                        <rect key="frame" x="274" y="38" width="273" height="43"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Km2-0d-fF6">
+                                        <rect key="frame" x="166" y="23" width="75" height="75"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="line">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="uyN-SZ-Wsh"/>
+                    <tabBarItem key="tabBarItem" title="하행" image="down-arrow.png" id="uyN-SZ-Wsh" userLabel="하행"/>
+                    <connections>
+                        <outlet property="downStationLineNumImage" destination="Km2-0d-fF6" id="Uwy-9e-SMP"/>
+                        <outlet property="downStationNameLabel" destination="kMw-pb-oHU" id="icX-4T-JcT"/>
+                        <outlet property="downUIDesignView" destination="V1A-Z3-Ijv" id="GHe-1v-pTi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuS-rN-Ecl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4499" y="1178"/>
+            <point key="canvasLocation" x="1116" y="3838"/>
         </scene>
-        <!--Item 1-->
+        <!--역정보-->
         <scene sceneID="e4m-YB-hfs">
             <objects>
-                <viewController id="bUP-50-FxK" sceneMemberID="viewController">
+                <viewController title="역정보" id="bUP-50-FxK" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dpt-ei-aqU"/>
                         <viewControllerLayoutGuide type="bottom" id="XKm-TI-50W"/>
@@ -756,13 +805,40 @@
                     <view key="view" contentMode="scaleToFill" id="xRl-dU-AuX">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jp3-0i-wEM" customClass="DetailLineView" customModule="tarin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="117" width="768" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동대문역사문화공원" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq2-0m-Kgu">
+                                        <rect key="frame" x="274" y="38" width="273" height="43"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.png" translatesAutoresizingMaskIntoConstraints="NO" id="0dE-jm-X60">
+                                        <rect key="frame" x="166" y="23" width="75" height="75"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="line">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="6ID-bw-P7i"/>
+                    <tabBarItem key="tabBarItem" title="역정보" image="info.png" id="6ID-bw-P7i"/>
+                    <connections>
+                        <outlet property="detailLineImage" destination="0dE-jm-X60" id="k7h-QZ-2Hh"/>
+                        <outlet property="detailNameLabel" destination="uq2-0m-Kgu" id="niu-5c-mLm"/>
+                        <outlet property="detailUIDesignView" destination="Jp3-0i-wEM" id="n6M-pX-Kro"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qG4-dl-HTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4481" y="12"/>
+            <point key="canvasLocation" x="2111" y="3838"/>
         </scene>
         <!--경로검색-->
         <scene sceneID="ZsJ-Wn-hzW">
@@ -815,13 +891,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="bUP-50-FxK" kind="relationship" relationship="viewControllers" id="C2e-jy-81d"/>
+                        <segue destination="B54-ye-Jdd" kind="relationship" relationship="viewControllers" id="IoL-hr-eY6"/>
                         <segue destination="bbL-cb-M1z" kind="relationship" relationship="viewControllers" id="1cW-YT-cYH"/>
+                        <segue destination="bUP-50-FxK" kind="relationship" relationship="viewControllers" id="C2e-jy-81d"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aB2-s9-h9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="209"/>
+            <point key="canvasLocation" x="1054" y="2464"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0nH-Vk-PQ8">
@@ -843,12 +920,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="4.png" width="100" height="100"/>
         <image name="_pin.png" width="25" height="25"/>
         <image name="_tube-scheme.png" width="25" height="25"/>
+        <image name="down-arrow.png" width="24" height="24"/>
+        <image name="info.png" width="24" height="24"/>
         <image name="linemap_naver.png" width="2948" height="2126"/>
         <image name="question.png" width="512" height="512"/>
         <image name="route.png" width="512" height="512"/>
         <image name="train.png" width="512" height="512"/>
+        <image name="up-arrow.png" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zJg-83-fSV"/>

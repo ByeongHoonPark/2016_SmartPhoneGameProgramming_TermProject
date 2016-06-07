@@ -19,6 +19,7 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
     
     
     var filterdData = [StationInfo]()
+    var selectedData: StationInfo?
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell
     {
       //  temptableView = tableView
@@ -106,26 +107,55 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         self.updateSearchResultsForSearchController(self.searchController)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+  
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "StationListSelect"{
+            let barViewControllers = segue.destinationViewController as! UITabBarController
+            let destination = barViewControllers.viewControllers![0] as! ResultViewController
+         //   segue.destinationViewController as! ResultViewController
+             //   segue.destinationViewController as! ResultViewController
+            if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
+                destination.nameLabelText = ParsingData.stations[indexPath.row].name
+                destination.LineNumImageText = ParsingData.stations[indexPath.row].imageName
+                print(ParsingData.stations[indexPath.row].lineNumber)
+                switch ParsingData.stations[indexPath.row].lineNumber {
+                case "신분당선":
+                    destination.LineNum = 10
+                    break
+                case "분당선":
+                    destination.LineNum = 11
+                    break
+                case "수인선":
+                    destination.LineNum = 11
+                    break
+                case "인천지하철 1호선":
+                    destination.LineNum = 12
+                    break
+                case "경춘선":
+                    destination.LineNum = 13
+                    break
+                case "경의중앙선":
+                    destination.LineNum = 14
+                    break
+                case "공항철도":
+                    destination.LineNum = 15
+                    break
+                case "의정부경전철":
+                    destination.LineNum = 16
+                    break
+                case "에버라인":
+                    destination.LineNum = 17
+                    break
+                default:
+                     destination.LineNum = Int(ParsingData.stations[indexPath.row].lineNumber)
+                    break
+                }
+               
+            }
+          
+        }
+        
+       
     }
-    */
-
+    
 }
-//extension SearchTableViewController: UISearchBarDelegate {
-    // MARK: - UISearchBar Delegate
-//    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
- //       filterContentForSearchText(mySearch, searchText: mySearch.text!)
- //   }
-//}
-//extension SearchTableViewController : UISearchResultsUpdating{
-//    func updateSeartchResultForSearchController(searchController: UISearchController){
-//        let searchBar = searchController.searchBar
-//        filterContentForSearchText(mySearch, searchText: mySearch.text!)
-//    }
-//}
