@@ -588,7 +588,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="wCK-LQ-GMt" kind="show" id="mUM-uW-ItX"/>
+                                    <segue destination="B54-ye-Jdd" kind="show" id="jVw-YP-nPz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -605,23 +605,30 @@
             <point key="canvasLocation" x="1161" y="1100"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="WPx-p9-lkj">
+        <scene sceneID="LoF-wU-nV5">
             <objects>
-                <viewController id="wCK-LQ-GMt" sceneMemberID="viewController">
+                <viewController id="B54-ye-Jdd" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dft-EZ-2Nf"/>
-                        <viewControllerLayoutGuide type="bottom" id="s9o-9t-rZ4"/>
+                        <viewControllerLayoutGuide type="top" id="R1c-pU-96W"/>
+                        <viewControllerLayoutGuide type="bottom" id="X4D-y5-7r6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DbH-B8-646">
+                    <view key="view" contentMode="scaleToFill" id="AO0-P3-UZ6">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjh-qg-gXh" customClass="DetailLineView" customModule="tarin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="117" width="768" height="120"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MKb-qT-qEZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-pt-LaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pj-Ze-sbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="2325"/>
+            <point key="canvasLocation" x="1036" y="2277"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="VwI-0E-muK">
@@ -844,6 +851,6 @@
         <image name="train.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MvV-W5-Yvh"/>
+        <segue reference="zJg-83-fSV"/>
     </inferredMetricsTieBreakers>
 </document>
