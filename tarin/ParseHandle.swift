@@ -40,11 +40,11 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
     var stationExCode = NSMutableString()
     var stationName = NSMutableString()
     var stationLineNum = NSMutableString()
-    var latitude = NSMutableString()
-    var longtitude = NSMutableString()
     var parsingMode: Int = 0
     var lineImage = NSString()
-    let path = NSBundle.mainBundle().pathForResource("StationLoaction", ofType: "xml")
+    var stations = [StationInfo]()
+    let path = NSBundle.mainBundle().pathForResource("stationData", ofType: "xml")
+    
     
     func beginParsing(parsingMode mode: Int)
     {
@@ -71,7 +71,7 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
     {
         element = elementName
         
-        if(elementName as NSString).isEqualToString("Location")
+        if(elementName as NSString).isEqualToString("Station")
         {
             elements = NSMutableDictionary()
             elements = [:]
@@ -83,10 +83,6 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
             stationName = ""
             stationLineNum = NSMutableString()
             stationLineNum = ""
-            latitude = NSMutableString()
-            latitude = ""
-            longtitude = NSMutableString()
-            longtitude = ""
             lineImage = NSString()
             lineImage = ""
             
@@ -129,7 +125,7 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
                 tempname = "공항철도"
                 break
                 
-                case "G":
+                case "U":
                 tempname = "의정부경전철"
                 break
                 
@@ -141,6 +137,12 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
                 tempname = "수인선"
                 break
                 
+                case "G":
+                tempname = "경춘선"
+                break
+                case "E":
+                tempname = "에버라인"
+                break
             default:
                 tempname = temp
                 break
@@ -148,19 +150,12 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
             
             stationLineNum.appendString(tempname)
         }
-        else if element.isEqualToString("latitude")
-        {
-            latitude.appendString(string)
-        }
-        else if element.isEqualToString("longtitude")
-        {
-            longtitude.appendString(string)
-        }
+
     }
     func parser(parser: NSXMLParser!, didEndElement elementName: String!,namespaceURI: String!, qualifiedName qName: String!)
     {
         //  if(elementName as NSString).isEqualToString("row")
-        if(elementName as NSString).isEqualToString("Location")
+        if(elementName as NSString).isEqualToString("Station")
         {
             
             if !stationName.isEqual(nil)
@@ -173,6 +168,8 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
             {
                 returnData = ""
                 returnData = (stationExCode as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+               // stationExCode.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                //returnData = NSCharacterSet.whitespaceAndNewlineCharacterSet()
                 elements.setObject(returnData, forKey: "stnExCode")
             }
             if !stationLineNum.isEqual(nil)
@@ -188,18 +185,6 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
                 returnData = (stationCode as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
                 elements.setObject(returnData, forKey: "stnCode")
             }
-            if !latitude.isEqual(nil)
-            {
-                returnData = ""
-                returnData = (latitude as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-                elements.setObject(returnData, forKey: "latitude")
-            }
-            if !longtitude.isEqual(nil)
-            {
-                returnData = ""
-                returnData = (longtitude as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-                elements.setObject(returnData, forKey: "longtitude")
-            }
             
             if(parsingMode == 0)
             {
@@ -208,6 +193,12 @@ class ParsingInFile: NSObject, NSXMLParserDelegate{
             else if(parsingMode == 1)
             {
                 a_posts.addObject(elements)
+                let imagename = (stationLineNum as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                stations.append(StationInfo(name: (stationName as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()), externalCode: (stationExCode as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                    lineNumber: (stationLineNum as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                    imageName:("\(imagename).png")
+                    )
+                )
             }
             
             // print(posts.count)
