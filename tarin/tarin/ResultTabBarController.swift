@@ -15,14 +15,6 @@ class ResultTabBarController: UITabBarController {
     var LineNum: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // downStationNameLabel.text =
-        // downStationLineNumImage.image = UIImage(named: LineNumImageText)
-        // downUIDesignView.line = LineNum!
-        
-        // detailNameLabel.text = nameLabelText
-        // detailLineImage.image = UIImage(named: LineNumImageText)
-        //  detailUIDesignView.line = LineNum!
-        // Do any additional setup after loading the view.
     }
 
     

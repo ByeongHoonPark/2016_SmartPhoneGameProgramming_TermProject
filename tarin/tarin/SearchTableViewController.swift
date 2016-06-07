@@ -40,15 +40,8 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
         cell.detailTextLabel!.text = station1.lineNumber//candy.category
         cell.imageView!.image = UIImage(named:station1.imageName )
         
-        //cell.textLabel?.text = ParsingData.a_posts.objectAtIndex(indexPath.row).valueForKey("stnName") as! NSString as String
-       // cell.detailTextLabel?.text = ParsingData.a_posts.objectAtIndex(indexPath.row).valueForKey("stnLine") as! NSString as String
-        
-      // let imagename = ParsingData.a_posts.objectAtIndex(indexPath.row).valueForKey("stnImage") as! NSString as String
-       // let filePath = NSString(string: \(imagename)")
-        //cell.imageView!.image = UIImage(named:ParsingData.a_posts.objectAtIndex(indexPath.row).valueForKey("stnImage") as! NSString as String )
-        
         return cell as UITableViewCell
-        //cell.textLabel?.text =
+    
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -72,15 +65,7 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
         self.searchController.searchResultsUpdater = self
         self.searchController.dimsBackgroundDuringPresentation = false
         self.searchController.searchBar.delegate = self
-       // searchController.searchBar.delegate = self
-     //   searchController.searchResultsUpdater = self
-     //   searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
-      //  temptableView.tableHeaderView = self.searchController.searchBar
-     //   definesPresentationContext = true
-      //  searchController.searchBar.sizeToFit()
-       // temptableView.reloadData()
-        // Do any additional setup after loading the view.+
         self.searchController.searchBar.sizeToFit()
         self.searchController.searchBar.searchBarStyle = .Minimal
         self.tableView.tableHeaderView = self.searchController.searchBar
@@ -110,10 +95,7 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
   
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "StationListSelect"{
-            let barViewControllers = segue.destinationViewController as! UITabBarController
-            let destination = barViewControllers.viewControllers![0] as! ResultViewController
-         //   segue.destinationViewController as! ResultViewController
-             //   segue.destinationViewController as! ResultViewController
+            let destination = segue.destinationViewController as! ResultTabBarController
             if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
                 destination.nameLabelText = ParsingData.stations[indexPath.row].name
                 destination.LineNumImageText = ParsingData.stations[indexPath.row].imageName

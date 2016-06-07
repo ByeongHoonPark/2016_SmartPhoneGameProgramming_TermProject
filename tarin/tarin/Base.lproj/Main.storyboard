@@ -751,7 +751,7 @@
         <!--하행-->
         <scene sceneID="9xx-gm-cmH">
             <objects>
-                <viewController id="bbL-cb-M1z" customClass="ResultViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bbL-cb-M1z" customClass="DownResultViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j52-UP-3aQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Dw9-Ra-eza"/>
@@ -797,7 +797,7 @@
         <!--역정보-->
         <scene sceneID="e4m-YB-hfs">
             <objects>
-                <viewController title="역정보" id="bUP-50-FxK" sceneMemberID="viewController">
+                <viewController title="역정보" id="bUP-50-FxK" customClass="DetailResultViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dpt-ei-aqU"/>
                         <viewControllerLayoutGuide type="bottom" id="XKm-TI-50W"/>
@@ -879,10 +879,10 @@
             </objects>
             <point key="canvasLocation" x="2371" y="-1121"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Result Tab Bar Controller-->
         <scene sceneID="crN-an-a07">
             <objects>
-                <tabBarController id="bYZ-if-ycN" sceneMemberID="viewController">
+                <tabBarController id="bYZ-if-ycN" customClass="ResultTabBarController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="8gO-8O-nI9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Dri-wU-DST">
