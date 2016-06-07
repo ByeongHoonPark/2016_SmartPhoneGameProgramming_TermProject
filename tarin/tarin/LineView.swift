@@ -102,7 +102,7 @@ class LineView: UIView {
 class DetailLineView: UIView {
     
     @IBInspectable var lineColor: UIColor = UIColor(red: 255, green: 255, blue: 255, alpha: 255)
-    @IBInspectable var line: Int = 0
+    @IBInspectable var line: Int = 1
     
     override func drawRect(rect: CGRect) {
         switch line {
@@ -172,16 +172,35 @@ class DetailLineView: UIView {
             CGRect(origin: CGPoint(x: 0,y: bounds.height/2 - 30), size: CGSize(width: 150.0, height: 60.0))
         let temp2 =
             CGRect(origin: CGPoint(x: bounds.width/2 + 250,y: bounds.height/2 - 30.0), size: CGSize(width: 150.0, height: 60.0))
-        let centerRect =
-            CGRect(origin: CGPoint(x: bounds.width/2 - 190,y: 0.0), size: CGSize(width: 150.0, height: 120.0))
-        //UIColor(red: 0, green: 101/255, blue: 179/255, alpha: 255).setFill()
+        let outtercenterRect =
+            CGRect(origin: CGPoint(x: bounds.width/2 - 190,y: 0.0), size: CGSize(width: 390.0, height: 120.0))
+        
+        
+                //UIColor(red: 0, green: 101/255, blue: 179/255, alpha: 255).setFill()
         lineColor.setFill()
         leftSemiCircle.fill()
         rightSemiCircle.fill()
         UIRectFill(temp)
         UIRectFill(temp2)
-        UIRectFill(centerRect)
+        UIRectFill(outtercenterRect)
         
+        let innerleftSemiCircle =
+            //UIBezierPath(ovalInRect:
+            //CGRect(origin: CGPoint(x: 50,y: 0), size: CGSize(width: 200.0, height: 125.0))
+            UIBezierPath(arcCenter: CGPoint(x:200,y:bounds.height/2), radius: 40.0, startAngle: CGFloat(M_PI_2), endAngle: CGFloat(M_PI)*1.5, clockwise: true)
+        let innerrightSemiCircle =
+            //UIBezierPath(ovalInRect:
+            //CGRect(origin: CGPoint(x: 50,y: 0), size: CGSize(width: 200.0, height: 125.0))
+            UIBezierPath(arcCenter: CGPoint(x:bounds.width / 2 + 200,y:bounds.height/2), radius: 40.0, startAngle: CGFloat(M_PI)*1.5, endAngle: CGFloat(M_PI_2), clockwise: true)
+        
+        UIColor.whiteColor().setFill()
+        innerleftSemiCircle.fill()
+        innerrightSemiCircle.fill()
+        
+        let innercenterRect =
+            CGRect(origin: CGPoint(x: bounds.width/2 - 190,y: 20.0), size: CGSize(width: 390.0, height: 80.0))
+
+        UIRectFill(innercenterRect)
         
         
     }
