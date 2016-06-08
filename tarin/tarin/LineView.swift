@@ -187,3 +187,52 @@ class DetailLineView: UIView {
     
 }
 
+@IBDesignable
+class RailView: UIView {
+    
+    @IBInspectable var lineColor: UIColor = UIColor(red: 125/255, green: 125/255, blue: 125/255, alpha: 255)
+    
+    override func drawRect(rect: CGRect) {
+        let path =
+            UIBezierPath(ovalInRect:
+                CGRect(origin: CGPoint(x: 256.0-10,y: 0), size: CGSize(width: 20.0, height: 20.0))
+        )
+        let path2 =
+            UIBezierPath(ovalInRect:
+                CGRect(origin: CGPoint(x: 512-10,y: 0), size: CGSize(width: 20.0, height: 20.0))
+        )
+        
+        let first =
+            CGRect(origin: CGPoint(x: 0,y: 5), size: CGSize(width: 247.0, height: 10.0))
+        let second =
+            CGRect(origin: CGPoint(x: 264,y: 5), size: CGSize(width: 247.0, height: 10.0))
+        let third =
+            CGRect(origin: CGPoint(x: 511,y: 5), size: CGSize(width: 255.0, height: 10.0))
+        lineColor.setFill()
+        path.fill()
+        path2.fill()
+               UIRectFill(first)
+         UIRectFill(second)
+           UIRectFill(third)
+        
+        let path3 =
+            UIBezierPath(ovalInRect:
+                CGRect(origin: CGPoint(x: 256-5,y: 5), size: CGSize(width: 10.0, height: 10.0))
+        )
+        let path4 =
+            UIBezierPath(ovalInRect:
+                CGRect(origin: CGPoint(x: 512-5,y: 5), size: CGSize(width: 10.0, height: 10.0))
+        )
+        UIColor.whiteColor().setFill()
+        path3.fill()
+        path4.fill()
+
+        //UIRectFill(temp2)
+        
+        
+        
+    }
+    
+}
+
+

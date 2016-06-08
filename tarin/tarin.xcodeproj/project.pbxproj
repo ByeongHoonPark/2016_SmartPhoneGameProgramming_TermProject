@@ -48,6 +48,7 @@
 		A18DF3F91D0726D9004F78AB /* ResultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */; };
 		A18DF3FB1D0728E1004F78AB /* DownResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3FA1D0728E1004F78AB /* DownResultViewController.swift */; };
 		A18DF3FD1D07297D004F78AB /* DetailResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3FC1D07297D004F78AB /* DetailResultViewController.swift */; };
+		A1C5BCD31D082D1C00F8C1A3 /* train2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BCD21D082D1C00F8C1A3 /* train2.png */; };
 		A1D438D71D042225002173B3 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D61D042225002173B3 /* route.png */; };
 		A1D438DA1D0424B4002173B3 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D91D0424B4002173B3 /* question.png */; };
 		A1D438DC1D042540002173B3 /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438DB1D042540002173B3 /* train.png */; };
@@ -99,6 +100,7 @@
 		A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTabBarController.swift; sourceTree = "<group>"; };
 		A18DF3FA1D0728E1004F78AB /* DownResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownResultViewController.swift; sourceTree = "<group>"; };
 		A18DF3FC1D07297D004F78AB /* DetailResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailResultViewController.swift; sourceTree = "<group>"; };
+		A1C5BCD21D082D1C00F8C1A3 /* train2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train2.png; sourceTree = "<group>"; };
 		A1D438D61D042225002173B3 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route.png; path = tarin/images/route.png; sourceTree = "<group>"; };
 		A1D438D91D0424B4002173B3 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = question.png; path = tarin/images/question.png; sourceTree = "<group>"; };
 		A1D438DB1D042540002173B3 /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = train.png; path = tarin/images/train.png; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		A147B3611D05A8B500E18A48 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				A1C5BCD21D082D1C00F8C1A3 /* train2.png */,
 				A18DF3F21D071C43004F78AB /* down-arrow.png */,
 				A18DF3F31D071C43004F78AB /* up-arrow.png */,
 				A147B3361D0595B700E18A48 /* _pin.png */,
@@ -314,6 +317,7 @@
 				A11D956F1CFAC1630002B73D /* Main.storyboard in Resources */,
 				A18DF3F41D071C43004F78AB /* down-arrow.png in Resources */,
 				A147B35C1D05A70100E18A48 /* 의정부경전철.png in Resources */,
+				A1C5BCD31D082D1C00F8C1A3 /* train2.png in Resources */,
 				A147B3601D05A8A600E18A48 /* StationLoaction.xml in Resources */,
 				A1D438D71D042225002173B3 /* route.png in Resources */,
 				A147B3511D05A70100E18A48 /* 5.png in Resources */,

@@ -25,3 +25,30 @@ class StationInfo{
       //  self.index = index
     }
 }
+class RealTimeInfo{
+    
+    var subWayId : String
+    var updnLine : String
+    var trainDestination: String
+    var trainKind : String
+    var stationName : String
+    var arriveStatus : String
+    var arriveTime : String
+    var arriveStatus2 : String
+    //var index : Int
+    // var latitude : Float // wi do
+    //var longtitude : Float // kyung do
+    
+    init(subWayId : String,updnLine : String,trainDestination: String,trainKind : String,stationName : String,arriveStatus : String,arriveTime : String,arriveStatus2 : String)
+    {
+       self.subWayId = subWayId
+        self.updnLine = updnLine
+        self.trainDestination = trainDestination
+        self.trainKind = trainKind
+        self.stationName = stationName
+        self.arriveStatus = arriveStatus
+        self.arriveStatus2 = arriveStatus2
+        self.arriveTime = arriveTime
+    }
+}
+
