@@ -218,8 +218,8 @@ class TrainLineViewController: UIViewController,UITableViewDataSource,UITableVie
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "TransferResult"{
             let destination = segue.destinationViewController as! TransferResultViewController
-            destination.StartLabel.text = StartStationName
-            destination.DestLabel.text = DestinationName
+            destination.StartStationName = StartStationName
+            destination.DestinationName = DestinationName
         
             }
     }

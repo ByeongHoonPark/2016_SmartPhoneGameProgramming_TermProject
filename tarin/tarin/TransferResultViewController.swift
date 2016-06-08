@@ -12,9 +12,14 @@ class TransferResultViewController: UIViewController {
 
     @IBOutlet weak var StartLabel: UILabel!
     @IBOutlet weak var DestLabel: UILabel!
+    
+    var StartStationName: String?
+    var DestinationName: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            StartLabel.text = StartStationName
+        DestLabel.text = DestinationName
         // Do any additional setup after loading the view.
     }
 
