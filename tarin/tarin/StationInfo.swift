@@ -52,3 +52,28 @@ class RealTimeInfo{
     }
 }
 
+class TransferInfo{
+    var StartStation : String
+    var DestStation : String
+    var ShortTimeStatonList : Array<String>
+    var ShortTimeTransferInfo : String
+    
+    
+    var ShortTransferStatonList : Array<String>
+    var ShortTransferTransferInfo : String
+    //var index : Int
+    // var latitude : Float // wi do
+    //var longtitude : Float // kyung do
+    
+    init(StartStation : String,DestStation : String,ShortTimeStatonList: Array<String>,ShortTimeTransferInfo : String,ShortTransferStatonList : Array<String>,ShortTransferTransferInfo : String)
+    {
+        self.StartStation = StartStation
+        self.DestStation = DestStation
+        self.ShortTimeStatonList = ShortTimeStatonList
+        self.ShortTimeTransferInfo = ShortTimeTransferInfo
+        self.ShortTransferStatonList = ShortTransferStatonList
+        self.ShortTransferTransferInfo = ShortTransferTransferInfo
+
+    }
+
+}

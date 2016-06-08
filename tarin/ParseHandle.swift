@@ -424,6 +424,7 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
     var ShortTransferStatonList = NSMutableArray()
     var ShortTransferTransferInfo = NSMutableString()
     
+    var TransferData = [TransferInfo]()
     
     func beginParsing(startStation: String, destStation: String)
     {
@@ -523,14 +524,21 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
                  elements.setObject(ShortTransferTransferInfo, forKey: "최소환승정보")
             }
                 posts.addObject(elements)
-                stations.append(StationInfo(name: (stationName as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()), externalCode: (stationExCode as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
-                    lineNumber: (stationLineNum as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
-                    imageName:("\(imagename).png")
-                    )
-                )
-            }
+            TransferData.append(TransferInfo(
+                StartStation: (StartStation as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                DestStation: (DestStation as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                ShortTimeStatonList: ShortTimeStatonList as NSArray as! Array,
+                ShortTimeTransferInfo: (ShortTimeTransferInfo as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                ShortTransferStatonList: ShortTransferStatonList as NSArray as! Array,
+                ShortTransferTransferInfo: (ShortTransferTransferInfo as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())))
+                //stations.append(StationInfo(name: (stationName as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()), externalCode: (stationExCode as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                  //  lineNumber: (stationLineNum as NSString as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()),
+                 //   imageName:("\(imagename).png")
+                 //   )
+            //    )
+          //  }
             
-        }
+       }
     }
     
     

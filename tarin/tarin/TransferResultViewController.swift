@@ -16,10 +16,13 @@ class TransferResultViewController: UIViewController {
     var StartStationName: String?
     var DestinationName: String?
 
+  var ParsingData = ParsingInWeb_Transfer()
     override func viewDidLoad() {
         super.viewDidLoad()
             StartLabel.text = StartStationName
         DestLabel.text = DestinationName
+        ParsingData.beginParsing(StartStationName!, destStation: DestinationName!)
+        print("완료")
         // Do any additional setup after loading the view.
     }
 
