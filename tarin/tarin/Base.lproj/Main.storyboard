@@ -1040,15 +1040,6 @@
         <!--경로검색-->
         <scene sceneID="ZsJ-Wn-hzW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s5R-gc-m8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="2Eq-aI-r3S">
-                    <connections>
-                        <outlet property="delegate" destination="QQW-4o-XJa" id="Ayh-gu-T9y"/>
-                        <outlet property="searchContentsController" destination="QQW-4o-XJa" id="M7v-aD-Iz3"/>
-                        <outlet property="searchResultsDataSource" destination="QQW-4o-XJa" id="glq-Cb-yjP"/>
-                        <outlet property="searchResultsDelegate" destination="QQW-4o-XJa" id="LWU-vK-CnG"/>
-                    </connections>
-                </searchDisplayController>
                 <viewController title="경로검색" id="QQW-4o-XJa" customClass="TrainLineViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oee-q6-fXz"/>
@@ -1175,6 +1166,15 @@
                         <outlet property="searchDisplayController" destination="2Eq-aI-r3S" id="pAF-67-RT6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5R-gc-m8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="2Eq-aI-r3S">
+                    <connections>
+                        <outlet property="delegate" destination="QQW-4o-XJa" id="Ayh-gu-T9y"/>
+                        <outlet property="searchContentsController" destination="QQW-4o-XJa" id="M7v-aD-Iz3"/>
+                        <outlet property="searchResultsDataSource" destination="QQW-4o-XJa" id="glq-Cb-yjP"/>
+                        <outlet property="searchResultsDelegate" destination="QQW-4o-XJa" id="LWU-vK-CnG"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1673" y="-1243"/>
         </scene>
