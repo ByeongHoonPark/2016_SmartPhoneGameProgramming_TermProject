@@ -1108,6 +1108,20 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o97-pD-b93">
                                 <rect key="frame" x="380" y="64" width="388" height="324"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb2-uB-lry">
+                                        <rect key="frame" x="300" y="20" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="cuv-4Q-coZ" kind="show" identifier="TransferResult" id="WLk-Mg-Fnd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ok-Pa-vRP">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="30"/>
+                                        <state key="normal" title="도착역검색"/>
+                                        <connections>
+                                            <action selector="Destination:" destination="QQW-4o-XJa" eventType="touchUpInside" id="JDP-Dl-Olb"/>
+                                        </connections>
+                                    </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WWX-UY-jvK">
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="324"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1138,13 +1152,6 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ok-Pa-vRP">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="30"/>
-                                        <state key="normal" title="도착역검색"/>
-                                        <connections>
-                                            <action selector="Destination:" destination="QQW-4o-XJa" eventType="touchUpInside" id="JDP-Dl-Olb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
@@ -1178,23 +1185,41 @@
             </objects>
             <point key="canvasLocation" x="1673" y="-1243"/>
         </scene>
-        <!--View Controller-->
+        <!--Transfer Result View Controller-->
         <scene sceneID="ZNf-jN-aW9">
             <objects>
-                <viewController id="cuv-4Q-coZ" sceneMemberID="viewController">
+                <viewController id="cuv-4Q-coZ" customClass="TransferResultViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e80-au-xTF"/>
                         <viewControllerLayoutGuide type="bottom" id="FM2-gl-s6q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="A9C-tb-lUB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-w1-Yri">
+                                <rect key="frame" x="218" y="193" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qO-GE-jsh">
+                                <rect key="frame" x="218" y="423" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="DestLabel" destination="0qO-GE-jsh" id="Kjk-FH-nE2"/>
+                        <outlet property="StartLabel" destination="PRV-w1-Yri" id="gKp-6k-Y8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTI-n8-GOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2479" y="-1243"/>
+            <point key="canvasLocation" x="2772" y="-1260"/>
         </scene>
         <!--Result Tab Bar Controller-->
         <scene sceneID="crN-an-a07">

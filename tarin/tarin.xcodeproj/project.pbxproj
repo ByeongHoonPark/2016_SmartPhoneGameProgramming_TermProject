@@ -48,6 +48,7 @@
 		A18DF3F91D0726D9004F78AB /* ResultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */; };
 		A18DF3FB1D0728E1004F78AB /* DownResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3FA1D0728E1004F78AB /* DownResultViewController.swift */; };
 		A18DF3FD1D07297D004F78AB /* DetailResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18DF3FC1D07297D004F78AB /* DetailResultViewController.swift */; };
+		A18E1F061D088AC800ABF8E1 /* TransferResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E1F051D088AC800ABF8E1 /* TransferResultViewController.swift */; };
 		A1C5BCD31D082D1C00F8C1A3 /* train2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BCD21D082D1C00F8C1A3 /* train2.png */; };
 		A1D438D71D042225002173B3 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D61D042225002173B3 /* route.png */; };
 		A1D438DA1D0424B4002173B3 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D91D0424B4002173B3 /* question.png */; };
@@ -100,6 +101,7 @@
 		A18DF3F81D0726D9004F78AB /* ResultTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTabBarController.swift; sourceTree = "<group>"; };
 		A18DF3FA1D0728E1004F78AB /* DownResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownResultViewController.swift; sourceTree = "<group>"; };
 		A18DF3FC1D07297D004F78AB /* DetailResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailResultViewController.swift; sourceTree = "<group>"; };
+		A18E1F051D088AC800ABF8E1 /* TransferResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferResultViewController.swift; sourceTree = "<group>"; };
 		A1C5BCD21D082D1C00F8C1A3 /* train2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train2.png; sourceTree = "<group>"; };
 		A1D438D61D042225002173B3 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route.png; path = tarin/images/route.png; sourceTree = "<group>"; };
 		A1D438D91D0424B4002173B3 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = question.png; path = tarin/images/question.png; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				A147B3301D05706200E18A48 /* LineView.swift */,
 				A11FFD2E1D07F39900DF399A /* LineStaionViewController.swift */,
 				A11FFD301D07F52F00DF399A /* LineListViewController.swift */,
+				A18E1F051D088AC800ABF8E1 /* TransferResultViewController.swift */,
 			);
 			path = tarin;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				A11FFD311D07F52F00DF399A /* LineListViewController.swift in Sources */,
 				A1039D4E1D067F8F00EED94D /* StationInfo.swift in Sources */,
 				A11FFD2F1D07F39900DF399A /* LineStaionViewController.swift in Sources */,
+				A18E1F061D088AC800ABF8E1 /* TransferResultViewController.swift in Sources */,
 				A11D956C1CFAC1630002B73D /* ViewController.swift in Sources */,
 				A18DF3FD1D07297D004F78AB /* DetailResultViewController.swift in Sources */,
 				A11D956A1CFAC1630002B73D /* AppDelegate.swift in Sources */,
