@@ -19,15 +19,12 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
     var lineNum: Int = 0
     var stringLineNum: String = ""
     var LineNumImageText : String = ""
-    // var searchController: UISearchController!
-    
     
     var filterdData = [StationInfo]()
     var lineFilterData = [StationInfo]()
     var selectedData: StationInfo?
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell
     {
-        //  temptableView = tableView
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("LineSearchCell")!
         if(cell.isEqual(NSNull))
         {
@@ -41,8 +38,8 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
         {
             station1 = lineFilterData[indexPath.row]
         }
-        cell.textLabel!.text = station1.name//candy.name
-        cell.detailTextLabel!.text = station1.lineNumber//candy.category
+        cell.textLabel!.text = station1.name
+        cell.detailTextLabel!.text = station1.lineNumber
         cell.imageView!.image = UIImage(named:station1.imageName )
         
         return cell as UITableViewCell
@@ -75,9 +72,6 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
         lineFilterData = ParsingData.stations.filter({(station: StationInfo) -> Bool in
                 return  station.lineNumber == stringLineNum
         })
-        
-        //LineNumImageText = UIImage(named: "\(lineNum).png")
-        //self.search
         self.searchController = UISearchController(searchResultsController: nil)
         self.searchController.searchResultsUpdater = self
         self.searchController.dimsBackgroundDuringPresentation = false
@@ -92,7 +86,6 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -104,7 +97,6 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
         
     }
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        //do whatever with searchController here.
         let searchBar = searchController.searchBar
         filterContentForSearchText(searchBar, searchText: searchBar.text!)
     }
@@ -115,7 +107,6 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "LineSearchResult"{
             let destination = segue.destinationViewController as! ResultTabBarController
-            //if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
             if let indexPath = stationListTable.indexPathForSelectedRow{
                 let stations: StationInfo
                 if searchController.active && searchController.searchBar.text != ""{
@@ -125,10 +116,9 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
                 {
                     stations = lineFilterData[indexPath.row]
                 }
-                destination.nameLabelText = stations.name //ParsingData.stations[indexPath.row].name
-                destination.LineNumImageText = stations.imageName  //ParsingData.stations[indexPath.row].imageName
-                //print(ParsingData.stations[indexPath.row].lineNumber)
-                switch stations.lineNumber//ParsingData.stations[indexPath.row].lineNumber
+                destination.nameLabelText = stations.name
+                destination.LineNumImageText = stations.imageName
+                switch stations.lineNumber
                 {
                 case "신분당선":
                     destination.LineNum = 10
@@ -158,7 +148,7 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
                     destination.LineNum = 17
                     break
                 default:
-                    destination.LineNum = Int(stations.lineNumber)//Int(ParsingData.stations[indexPath.row].lineNumber)
+                    destination.LineNum = Int(stations.lineNumber)
                     break
                 }
                 
