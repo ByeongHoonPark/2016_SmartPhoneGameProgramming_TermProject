@@ -18,13 +18,74 @@ class TrainLineViewController: UIViewController,UISearchBarDelegate, UISearchRes
     @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var DestinationSwitchButton: UIButton!
+    @IBOutlet weak var StartSwitchButton: UIButton!
     @IBOutlet weak var SearchBoundView: UIView!
-    @IBOutlet weak var StartstationTableView: UITableView!
-    @IBOutlet weak var DestinationStationTableView: UITableView!
-    
+   
     @IBOutlet weak var SearchBoundView2: UIView!
+
+    @IBOutlet weak var StartStationTableView: UITableView!
+    @IBOutlet weak var DestinationStationTableView: UITableView!
+
+    @IBAction func Start(sender: AnyObject) {
+        StartStationTableView.hidden = false
+        StartSwitchButton.hidden = true
+    }
+    @IBAction func Destination(sender: AnyObject) {
+        DestinationStationTableView.hidden = false
+        DestinationSwitchButton.hidden = true
+    }
+    
     let StartSearchBar = UISearchController(searchResultsController: nil)
     let DestinationSearchBar = UISearchController(searchResultsController: nil)
+    
+    
+    let ParsingData = ParsingInFile()
+    var filterdData = [StationInfo]()
+    var selectedData: StationInfo?
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell
+    {
+        
+        var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+        if(cell.isEqual(NSNull))
+        {
+            cell = NSBundle.mainBundle().loadNibNamed("Cell", owner: self, options: nil)[0] as! UITableViewCell;
+        }
+        let station1: StationInfo
+        if self.searchController.active && self.searchController.searchBar.text != ""{
+            station1 = filterdData[indexPath.row]
+        }
+        else
+        {
+            station1 = ParsingData.stations[indexPath.row]
+        }
+        cell.textLabel!.text = station1.name
+        cell.detailTextLabel!.text = station1.lineNumber
+        cell.imageView!.image = UIImage(named:station1.imageName )
+        
+        return cell as UITableViewCell
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        if self.searchController.active && self.searchController.searchBar.text != ""{
+            return filterdData.count
+        }
+        else
+        {
+            return ParsingData.a_posts.count
+            
+        }
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,15 +97,9 @@ class TrainLineViewController: UIViewController,UISearchBarDelegate, UISearchRes
         definesPresentationContext = true
         StartSearchBar.searchBar.sizeToFit()
         StartSearchBar.searchBar.searchBarStyle = .Minimal
-       // StartSearchBar.searchBar.frame = CGRectMake(0, 0, 370, 80)
-       // StartSearchBar.searchBar.layer.position = CGPoint(x: 10, y: 64)
-        SearchBoundView.addSubview(StartSearchBar.searchBar)
-        //self.navigationController?.navigationBar.addSubview(StartSearchBar.searchBar)
-        var frame = StartSearchBar.searchBar.frame
-        frame.origin.x = 10
-        frame.origin.y = 0
-        frame.size.width = 370
-        StartSearchBar.searchBar.frame = frame
+        StartStationTableView.tableHeaderView = StartSearchBar.searchBar
+        StartStationTableView.hidden = true
+
         
         DestinationSearchBar.searchResultsUpdater = self
         DestinationSearchBar.dimsBackgroundDuringPresentation = false
@@ -54,23 +109,31 @@ class TrainLineViewController: UIViewController,UISearchBarDelegate, UISearchRes
         definesPresentationContext = true
         DestinationSearchBar.searchBar.sizeToFit()
         DestinationSearchBar.searchBar.searchBarStyle = .Minimal
-        SearchBoundView.addSubview(DestinationSearchBar.searchBar)
+        SearchBoundView2.addSubview(DestinationSearchBar.searchBar)
+        DestinationStationTableView.tableHeaderView = DestinationSearchBar.searchBar
+        DestinationStationTableView.hidden = true
         var frame2 = DestinationSearchBar.searchBar.frame
-        frame2.origin.x = 384
+        frame2.origin.x = 10
         frame2.origin.y = 0
-        frame2.size.width = 370
+        frame2.size.width = 340
         DestinationSearchBar.searchBar.frame = frame2
-
-        
-        
-        //StartstationTableView.tableHeaderView = StartSearchBar.searchBar
-      //  StartstationTableView.hidden = false
-       // self.tableView.tableHeaderView = self.searchController.searchBar
         
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        if searchBar == StartSearchBar.searchBar
+        {
+            StartStationTableView.hidden = true
+            StartSwitchButton.hidden = false
+        }
+        if searchBar == DestinationSearchBar.searchBar
+        {
+            DestinationStationTableView.hidden = true
+            DestinationSwitchButton.hidden = false
+        }
     }
     func filterContentForSearchText(searchBar: UISearchBar, searchText: String)
     {
@@ -86,7 +149,7 @@ class TrainLineViewController: UIViewController,UISearchBarDelegate, UISearchRes
     }
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         if StartSearchBar.active && StartSearchBar.searchBar.text != ""{
-            StartstationTableView.hidden = false
+           // StartStationTableView.hidden = false
              self.updateSearchResultsForSearchController(StartSearchBar)
         }
         if DestinationSearchBar.active && DestinationSearchBar.searchBar.text != ""{
