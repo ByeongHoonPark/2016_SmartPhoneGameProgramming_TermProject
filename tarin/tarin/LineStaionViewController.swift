@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchResultsUpdating {
+class LineStaionViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchResultsUpdating {
 
     @IBOutlet weak var stationListTable: UITableView!
     @IBOutlet weak var stationLineImage: UIImageView!
@@ -16,11 +16,14 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
     
     let ParsingData = ParsingInFile()
     var searchController: UISearchController!
-    
+    var lineNum: Int = 0
+    var stringLineNum: String = ""
+    var LineNumImageText : String = ""
     // var searchController: UISearchController!
     
     
     var filterdData = [StationInfo]()
+    var lineFilterData = [StationInfo]()
     var selectedData: StationInfo?
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell
     {
@@ -36,7 +39,7 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
         }
         else
         {
-            station1 = ParsingData.stations[indexPath.row]
+            station1 = lineFilterData[indexPath.row]
         }
         cell.textLabel!.text = station1.name//candy.name
         cell.detailTextLabel!.text = station1.lineNumber//candy.category
@@ -53,7 +56,7 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
         }
         else
         {
-            return ParsingData.a_posts.count
+            return lineFilterData.count
             
         }
     }
@@ -63,7 +66,17 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        stationListTable.delegate = self
+        stationListTable.dataSource = self
         ParsingData.beginParsing(parsingMode: 1)
+        
+        stationUI.line = lineNum
+        stationLineImage.image = UIImage(named: LineNumImageText)
+        lineFilterData = ParsingData.stations.filter({(station: StationInfo) -> Bool in
+                return  station.lineNumber == stringLineNum
+        })
+        
+        //LineNumImageText = UIImage(named: "\(lineNum).png")
         //self.search
         self.searchController = UISearchController(searchResultsController: nil)
         self.searchController.searchResultsUpdater = self
@@ -85,7 +98,7 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
     
     func filterContentForSearchText(searchBar: UISearchBar, searchText: String)
     {
-        filterdData = ParsingData.stations.filter({(station: StationInfo) -> Bool in
+        filterdData = lineFilterData.filter({(station: StationInfo) -> Bool in
             return station.name.lowercaseString.containsString(searchText.lowercaseString)})
         stationListTable.reloadData()
         
@@ -100,7 +113,7 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "StationListSelect"{
+        if segue.identifier == "LineSearchResult"{
             let destination = segue.destinationViewController as! ResultTabBarController
             //if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
             if let indexPath = stationListTable.indexPathForSelectedRow{
@@ -110,7 +123,7 @@ class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchRe
                 }
                 else
                 {
-                    stations = ParsingData.stations[indexPath.row]
+                    stations = lineFilterData[indexPath.row]
                 }
                 destination.nameLabelText = stations.name //ParsingData.stations[indexPath.row].name
                 destination.LineNumImageText = stations.imageName  //ParsingData.stations[indexPath.row].imageName
