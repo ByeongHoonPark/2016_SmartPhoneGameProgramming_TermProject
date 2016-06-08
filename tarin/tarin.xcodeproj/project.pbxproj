@@ -16,6 +16,8 @@
 		A11D956F1CFAC1630002B73D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11D956D1CFAC1630002B73D /* Main.storyboard */; };
 		A11D95711CFAC1630002B73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11D95701CFAC1630002B73D /* Assets.xcassets */; };
 		A11D95741CFAC1630002B73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11D95721CFAC1630002B73D /* LaunchScreen.storyboard */; };
+		A11FFD2F1D07F39900DF399A /* LineStaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11FFD2E1D07F39900DF399A /* LineStaionViewController.swift */; };
+		A11FFD311D07F52F00DF399A /* LineListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11FFD301D07F52F00DF399A /* LineListViewController.swift */; };
 		A147B3291D05576C00E18A48 /* ParseHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A147B3281D05576C00E18A48 /* ParseHandle.swift */; };
 		A147B3311D05706200E18A48 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A147B3301D05706200E18A48 /* LineView.swift */; };
 		A147B3381D0595B700E18A48 /* _pin.png in Resources */ = {isa = PBXBuildFile; fileRef = A147B3361D0595B700E18A48 /* _pin.png */; };
@@ -65,6 +67,8 @@
 		A11D95701CFAC1630002B73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11D95731CFAC1630002B73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11D95751CFAC1630002B73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A11FFD2E1D07F39900DF399A /* LineStaionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineStaionViewController.swift; sourceTree = "<group>"; };
+		A11FFD301D07F52F00DF399A /* LineListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineListViewController.swift; sourceTree = "<group>"; };
 		A147B3281D05576C00E18A48 /* ParseHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHandle.swift; sourceTree = "<group>"; };
 		A147B3301D05706200E18A48 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		A147B3361D0595B700E18A48 /* _pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _pin.png; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		A11D95681CFAC1630002B73D /* tarin */ = {
 			isa = PBXGroup;
 			children = (
+				A11FFD2D1D07E8DC00DF399A /* StationInfo */,
 				A11D95691CFAC1630002B73D /* AppDelegate.swift */,
 				A11D956B1CFAC1630002B73D /* ViewController.swift */,
 				A11D956D1CFAC1630002B73D /* Main.storyboard */,
@@ -142,6 +147,15 @@
 				A11D95751CFAC1630002B73D /* Info.plist */,
 				A1D438DF1D042BC8002173B3 /* TrainLineViewController.swift */,
 				A147B3301D05706200E18A48 /* LineView.swift */,
+				A11FFD2E1D07F39900DF399A /* LineStaionViewController.swift */,
+				A11FFD301D07F52F00DF399A /* LineListViewController.swift */,
+			);
+			path = tarin;
+			sourceTree = "<group>";
+		};
+		A11FFD2D1D07E8DC00DF399A /* StationInfo */ = {
+			isa = PBXGroup;
+			children = (
 				A147B33A1D0597DC00E18A48 /* SearchTableViewController.swift */,
 				A1039D4B1D067B8E00EED94D /* SearchStationNameViewController.swift */,
 				A1039D4D1D067F8F00EED94D /* StationInfo.swift */,
@@ -150,7 +164,7 @@
 				A18DF3FA1D0728E1004F78AB /* DownResultViewController.swift */,
 				A18DF3FC1D07297D004F78AB /* DetailResultViewController.swift */,
 			);
-			path = tarin;
+			name = StationInfo;
 			sourceTree = "<group>";
 		};
 		A147B3271D05574600E18A48 /* Parse */ = {
@@ -315,7 +329,9 @@
 			files = (
 				A1D438E01D042BC8002173B3 /* TrainLineViewController.swift in Sources */,
 				A147B33B1D0597DC00E18A48 /* SearchTableViewController.swift in Sources */,
+				A11FFD311D07F52F00DF399A /* LineListViewController.swift in Sources */,
 				A1039D4E1D067F8F00EED94D /* StationInfo.swift in Sources */,
+				A11FFD2F1D07F39900DF399A /* LineStaionViewController.swift in Sources */,
 				A11D956C1CFAC1630002B73D /* ViewController.swift in Sources */,
 				A18DF3FD1D07297D004F78AB /* DetailResultViewController.swift in Sources */,
 				A11D956A1CFAC1630002B73D /* AppDelegate.swift in Sources */,

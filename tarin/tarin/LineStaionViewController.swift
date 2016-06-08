@@ -1,32 +1,34 @@
 //
-//  SearchTableViewController.swift
+//  LineStaionViewController.swift
 //  tarin
 //
-//  Created by kpugame on 2016. 6. 6..
+//  Created by kpugame on 2016. 6. 8..
 //  Copyright © 2016년 kpugame. All rights reserved.
 //
 
 import UIKit
 
-class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISearchResultsUpdating {
+class LineStaionViewController: UIViewController,UISearchBarDelegate, UISearchResultsUpdating {
 
+    @IBOutlet weak var stationListTable: UITableView!
+    @IBOutlet weak var stationLineImage: UIImageView!
+    @IBOutlet weak var stationUI: DetailLineView!
+    
     let ParsingData = ParsingInFile()
     var searchController: UISearchController!
     
-    var temptableView: UITableView = UITableView()
-    
-   // var searchController: UISearchController!
+    // var searchController: UISearchController!
     
     
     var filterdData = [StationInfo]()
     var selectedData: StationInfo?
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)->UITableViewCell
     {
-      //  temptableView = tableView
-        var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+        //  temptableView = tableView
+        var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("LineSearchCell")!
         if(cell.isEqual(NSNull))
         {
-            cell = NSBundle.mainBundle().loadNibNamed("Cell", owner: self, options: nil)[0] as! UITableViewCell;
+            cell = NSBundle.mainBundle().loadNibNamed("LineSearchCell", owner: self, options: nil)[0] as! UITableViewCell;
         }
         let station1: StationInfo
         if self.searchController.active && self.searchController.searchBar.text != ""{
@@ -41,10 +43,10 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
         cell.imageView!.image = UIImage(named:station1.imageName )
         
         return cell as UITableViewCell
-    
+        
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if self.searchController.active && self.searchController.searchBar.text != ""{
             return filterdData.count
@@ -52,11 +54,11 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
         else
         {
             return ParsingData.a_posts.count
-
+            
         }
-     }
+    }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     override func viewDidLoad() {
@@ -72,20 +74,20 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
         self.searchController.searchBar.sizeToFit()
         self.searchController.searchBar.searchBarStyle = .Minimal
         
-        self.tableView.tableHeaderView = self.searchController.searchBar
+        stationListTable.tableHeaderView = self.searchController.searchBar
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-  
+    
     func filterContentForSearchText(searchBar: UISearchBar, searchText: String)
     {
         filterdData = ParsingData.stations.filter({(station: StationInfo) -> Bool in
             return station.name.lowercaseString.containsString(searchText.lowercaseString)})
-        self.tableView.reloadData()
+        stationListTable.reloadData()
         
     }
     func updateSearchResultsForSearchController(searchController: UISearchController) {
@@ -96,12 +98,12 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         self.updateSearchResultsForSearchController(self.searchController)
     }
-  
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "StationListSelect"{
             let destination = segue.destinationViewController as! ResultTabBarController
             //if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell) {
-            if let indexPath = self.tableView.indexPathForSelectedRow{
+            if let indexPath = stationListTable.indexPathForSelectedRow{
                 let stations: StationInfo
                 if searchController.active && searchController.searchBar.text != ""{
                     stations = filterdData[indexPath.row]
@@ -143,15 +145,15 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
                     destination.LineNum = 17
                     break
                 default:
-                     destination.LineNum = Int(stations.lineNumber)//Int(ParsingData.stations[indexPath.row].lineNumber)
+                    destination.LineNum = Int(stations.lineNumber)//Int(ParsingData.stations[indexPath.row].lineNumber)
                     break
                 }
-               
+                
             }
-          
+            
         }
         
-       
+        
     }
-    
+
 }

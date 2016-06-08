@@ -499,6 +499,12 @@
                                     <outletCollection property="gestureRecognizers" destination="ROZ-iH-kn6" appends="YES" id="c2Q-hf-erS"/>
                                 </connections>
                             </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ty9-FU-45S">
+                                <rect key="frame" x="1" y="20" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="W9a-0c-CjI"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -508,28 +514,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTv-5r-VgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="fnF-BB-Jx0" userLabel="2_Tap Gesture Recognizer">
                     <connections>
-                        <segue destination="gHa-hP-SI4" kind="show" id="zJg-83-fSV"/>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="6hQ-Jl-zn6"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Zym-Lb-ipm" userLabel="3_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="Rp4-3E-Lp6" userLabel="4_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="zXt-S4-QA0" userLabel="5_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="Gx2-Tf-TO9" userLabel="6_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="iWZ-yz-elM" userLabel="7_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="8yf-vd-BDT" userLabel="8_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="ktb-dx-MIi" userLabel="9_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="Zdm-hf-3zM" userLabel="신분당_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="F0b-xn-5D6" userLabel="분당_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="cen-Pw-Csa" userLabel="수인_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="KUe-lA-76b" userLabel="인천_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="ROZ-iH-kn6" userLabel="경춘_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="CFS-ir-i22" userLabel="경의중앙_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="zuU-jv-nUi" userLabel="공항_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="ObP-93-DPM" userLabel="의정부_Tap Gesture Recognizer"/>
-                <tapGestureRecognizer id="7C5-GO-QFO" userLabel="에버라인_Tap Gesture Recognizer"/>
+                <tapGestureRecognizer id="Zym-Lb-ipm" userLabel="3_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="3bl-SM-Ohw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Rp4-3E-Lp6" userLabel="4_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="2Ij-g3-geW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zXt-S4-QA0" userLabel="5_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="X6Z-pC-I4f"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Gx2-Tf-TO9" userLabel="6_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="ZAf-HH-7Wm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iWZ-yz-elM" userLabel="7_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="sZ5-QA-ePy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8yf-vd-BDT" userLabel="8_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="l90-EM-ZRB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ktb-dx-MIi" userLabel="9_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="2bE-kz-xty"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Zdm-hf-3zM" userLabel="신분당_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="e67-Kn-yyN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="F0b-xn-5D6" userLabel="분당_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="iAQ-aA-H1h"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cen-Pw-Csa" userLabel="수인_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="a6g-rx-WYU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KUe-lA-76b" userLabel="인천_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="P6u-To-je1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ROZ-iH-kn6" userLabel="경춘_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="qzF-f4-GUP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CFS-ir-i22" userLabel="경의중앙_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="op1-7Y-lJr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zuU-jv-nUi" userLabel="공항_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="SFf-Wn-3Ee"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ObP-93-DPM" userLabel="의정부_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="5gU-Zz-bbb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7C5-GO-QFO" userLabel="에버라인_Tap Gesture Recognizer">
+                    <connections>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="4ZF-oD-6w7"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <tapGestureRecognizer id="phj-a4-qhk" userLabel="1_Tap Gesture Recognizer">
                     <connections>
-                        <segue destination="gHa-hP-SI4" kind="show" id="OgE-Yk-hLV"/>
+                        <segue destination="Vcr-c0-DCg" kind="show" id="R4E-Ic-7x2"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -670,39 +740,99 @@
             </objects>
             <point key="canvasLocation" x="-13" y="-244"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="fKD-0h-Cvg">
+        <!--Line Staion View Controller-->
+        <scene sceneID="15m-va-czg">
             <objects>
-                <viewController id="gHa-hP-SI4" sceneMemberID="viewController">
+                <viewController id="Vcr-c0-DCg" customClass="LineStaionViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3lt-Jw-GdF"/>
-                        <viewControllerLayoutGuide type="bottom" id="4EZ-Y1-oeR"/>
+                        <viewControllerLayoutGuide type="top" id="CSC-L7-Wyw"/>
+                        <viewControllerLayoutGuide type="bottom" id="fZD-cF-gCe"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="coI-7N-Ghs">
+                    <view key="view" contentMode="scaleToFill" id="YTD-wl-QEe">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2um-To-xep" customClass="DetailLineView" customModule="tarin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="78" width="768" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.png" translatesAutoresizingMaskIntoConstraints="NO" id="A3o-Jg-JZI">
+                                        <rect key="frame" x="347" y="22" width="75" height="75"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="line">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYt-Ah-YKz">
+                                <rect key="frame" x="0.0" y="21" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="Wcb-MA-7if"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2kx-EN-fmb">
+                                <rect key="frame" x="0.0" y="206" width="768" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LineSearchCell" textLabel="Zew-eF-TFi" detailTextLabel="zWl-F8-4Pf" style="IBUITableViewCellStyleSubtitle" id="eBe-vF-MGm">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eBe-vF-MGm" id="4Iq-19-m2J">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zew-eF-TFi">
+                                                    <rect key="frame" x="68" y="6" width="31.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zWl-F8-4Pf">
+                                                    <rect key="frame" x="68" y="25.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="bYZ-if-ycN" kind="show" identifier="LineSearchResult" id="Wj2-oz-e3b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="stationLineImage" destination="A3o-Jg-JZI" id="dgn-7x-6R8"/>
+                        <outlet property="stationListTable" destination="2kx-EN-fmb" id="0oD-4V-uYs"/>
+                        <outlet property="stationUI" destination="2um-To-xep" id="me4-br-rMV"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gre-IZ-3sO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjS-R4-XFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3061" y="2884"/>
+            <point key="canvasLocation" x="2111" y="2123"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="8R1-ld-IRM">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="RZx-L1-qEE" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Q3-qt-YJ8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ePo-b9-Wae">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ePo-b9-Wae" id="WlB-mm-ItF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -717,36 +847,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAN-sH-MJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3685" y="1304"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GvP-UO-BZt">
-            <objects>
-                <navigationController id="kOt-gv-cAv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g2f-38-TPe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="RZx-L1-qEE" kind="relationship" relationship="rootViewController" id="81b-6p-1RO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y9c-Ec-L5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2865" y="1304"/>
-        </scene>
-        <!--Split View Controller-->
-        <scene sceneID="5Nx-Zh-AHp">
-            <objects>
-                <splitViewController id="LbE-bf-gVk" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <connections>
-                        <segue destination="kOt-gv-cAv" kind="relationship" relationship="masterViewController" id="jTy-8k-Osl"/>
-                        <segue destination="gHa-hP-SI4" kind="relationship" relationship="detailViewController" id="MvV-W5-Yvh"/>
-                    </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IOq-22-5vM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2111" y="1546"/>
         </scene>
         <!--하행-->
         <scene sceneID="9xx-gm-cmH">
@@ -784,6 +884,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="하행" image="down-arrow.png" id="uyN-SZ-Wsh" userLabel="하행"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="downStationLineNumImage" destination="Km2-0d-fF6" id="Uwy-9e-SMP"/>
                         <outlet property="downStationNameLabel" destination="kMw-pb-oHU" id="icX-4T-JcT"/>
@@ -830,6 +931,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="역정보" image="info.png" id="6ID-bw-P7i"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="detailLineImage" destination="0dE-jm-X60" id="k7h-QZ-2Hh"/>
                         <outlet property="detailNameLabel" destination="uq2-0m-Kgu" id="niu-5c-mLm"/>
@@ -932,6 +1034,7 @@
         <image name="up-arrow.png" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zJg-83-fSV"/>
+        <segue reference="Wj2-oz-e3b"/>
+        <segue reference="sZ5-QA-ePy"/>
     </inferredMetricsTieBreakers>
 </document>
