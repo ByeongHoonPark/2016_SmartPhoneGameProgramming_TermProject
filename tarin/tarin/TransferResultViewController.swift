@@ -13,16 +13,31 @@ class TransferResultViewController: UIViewController {
     @IBOutlet weak var StartLabel: UILabel!
     @IBOutlet weak var DestLabel: UILabel!
     
+    @IBOutlet weak var ShortTimeInfoLabel: UILabel!
+    @IBOutlet weak var ShortTrasferInfoLabel: UILabel!
     var StartStationName: String?
     var DestinationName: String?
 
   var ParsingData = ParsingInWeb_Transfer()
+    var filterData = [TransferInfo]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             StartLabel.text = StartStationName
         DestLabel.text = DestinationName
         ParsingData.beginParsing(StartStationName!, destStation: DestinationName!)
         print("완료")
+        
+       
+        //ShortTimeInfoLabel.text
+        filterData = ParsingData.TransferData.filter({(info: TransferInfo) ->Bool in
+            return info.StartStation == StartStationName
+        })
+     //   for i in 0 ..< ParsingData.posts.count
+      //  {
+           ShortTimeInfoLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("최단경로정보") as! NSString as String
+       // }
+        //ShortTimeInfoLabel.text = ParsingData.posts.objectAtIndex(<#T##index: Int##Int#>)
         // Do any additional setup after loading the view.
     }
 

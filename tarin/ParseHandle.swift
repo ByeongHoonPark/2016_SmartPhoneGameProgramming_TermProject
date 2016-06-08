@@ -483,7 +483,8 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
         }
         else if element.isEqualToString("shtTravelMsg")
         {
-             ShortTimeTransferInfo.appendString(string)
+            ShortTimeTransferInfo.setString(string)
+           //  ShortTimeTransferInfo.appendString(string)
         }
         else if element.isEqualToString("minStatnNm")
         {
