@@ -15,6 +15,8 @@ class TransferResultViewController: UIViewController {
     
     @IBOutlet weak var ShortTimeInfoLabel: UILabel!
     @IBOutlet weak var ShortTrasferInfoLabel: UILabel!
+    @IBOutlet weak var StartImage: UIImageView!
+    @IBOutlet weak var DestImage: UIImageView!
     var StartStationName: String?
     var DestinationName: String?
     var ShortTimeInfoStationList: Array<String>?
@@ -47,7 +49,8 @@ class TransferResultViewController: UIViewController {
         for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.count{
             test_trans?.appendContentsOf(ParsingData.posts.objectAtIndex(0).valueForKey("최소환승경유역")!.objectAtIndex(i) as! String)
         }
-        
+        StartImage.image = UIImage(named:StartStationImageName! )
+         DestImage.image = UIImage(named:DestStationImageName! )
 //        let tempString = string
 //        tempString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
 //        let strsplit = tempString.characters.split(",")
