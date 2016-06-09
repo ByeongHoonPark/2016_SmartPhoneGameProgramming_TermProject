@@ -44,9 +44,12 @@ class TransferResultViewController: UIViewController {
            ShortTimeInfoLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("최단경로정보") as! NSString as String
         ShortTrasferInfoLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("최소환승정보") as! NSString as String
         for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.count{
+            
+             print(i)
             test?.appendContentsOf(ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.objectAtIndex(i) as! String)
         }
-        for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.count{
+        for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최소환승경유역")!.count{
+            print(i)
             test_trans?.appendContentsOf(ParsingData.posts.objectAtIndex(0).valueForKey("최소환승경유역")!.objectAtIndex(i) as! String)
         }
         StartImage.image = UIImage(named:StartStationImageName! )
@@ -78,7 +81,30 @@ class TransferResultViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "timeSeguement"{
+            let destination = segue.destinationViewController as! TransferStationListTableViewController
+            destination.StartStationName = StartStationName
+            destination.DestinationName = DestinationName
+            destination.StartStationImageName = StartStationImageName
+            destination.DestStationImageName = DestStationImageName
+            destination.ShortTimeInfoStationList = ShortTimeInfoStationList
+            destination.ShortTrasferInfoStationList = ShortTrasferInfoStationList
+            destination.selectMode = 1
+        }
+        else if segue.identifier == "TransferSegue"
+        {
+            let destination = segue.destinationViewController as! TransferStationListTableViewController
+            destination.StartStationName = StartStationName
+            destination.DestinationName = DestinationName
+            destination.StartStationImageName = StartStationImageName
+            destination.DestStationImageName = DestStationImageName
+            destination.ShortTimeInfoStationList = ShortTimeInfoStationList
+            destination.ShortTrasferInfoStationList = ShortTrasferInfoStationList
+            destination.selectMode = 2
+        }
+    }
+
 
 
 }
