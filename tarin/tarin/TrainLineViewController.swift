@@ -47,7 +47,8 @@ class TrainLineViewController: UIViewController,UITableViewDataSource,UITableVie
     var StartStationName: String?
     var DestinationName: String?
     
-    
+    var ShortTimeInfoStationList: Array<String>?
+    var ShortTrasferInfoStationList: Array<String>?
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if tableView == StartStationTableView

@@ -426,6 +426,8 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
     
     var TransferData = [TransferInfo]()
     
+    var temp1: String?
+    
     func beginParsing(startStation: String, destStation: String)
     {
    
@@ -462,7 +464,7 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
             ShortTransferStatonList = []
             ShortTransferTransferInfo = NSMutableString()
             ShortTransferTransferInfo = ""
-            
+            temp1 = ""
             
         }
     }
@@ -471,7 +473,12 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
     {
         if element.isEqualToString("statnFnm")
         {
-            StartStation.appendString(string)
+            if temp1 != string
+            {
+                temp1 = string
+                StartStation.appendString(string)
+            }
+           
         }
         else if element.isEqualToString("statnTnm")
         {
@@ -483,7 +490,13 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
         }
         else if element.isEqualToString("shtTravelMsg")
         {
-            ShortTimeTransferInfo.setString(string)
+            let tempString = string
+            tempString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            let strsplit = tempString.characters.split(",")
+            print(strsplit)
+            //string.stringByTrimmingCharactersInSet(set: NSCharacterSet)
+            //string.componentsSeparatedByString(<#T##separator: String##String#>)
+            ShortTimeTransferInfo.appendString(string)
            //  ShortTimeTransferInfo.appendString(string)
         }
         else if element.isEqualToString("minStatnNm")
