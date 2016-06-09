@@ -47,6 +47,9 @@ class TrainLineViewController: UIViewController,UITableViewDataSource,UITableVie
     var StartStationName: String?
     var DestinationName: String?
     
+    var StartStationImageName: String?
+    var DestStationImageName: String?
+    
     var ShortTimeInfoStationList: Array<String>?
     var ShortTrasferInfoStationList: Array<String>?
     
@@ -54,10 +57,12 @@ class TrainLineViewController: UIViewController,UITableViewDataSource,UITableVie
         if tableView == StartStationTableView
         {
             StartStationName = ParsingData.stations[indexPath.row].name
+            StartStationImageName = ParsingData.stations[indexPath.row].imageName
         }
         if tableView == DestinationStationTableView
         {
             DestinationName = ParsingData.stations[indexPath.row].name
+            DestStationImageName = ParsingData.stations[indexPath.row].imageName
         }
     }
     
@@ -221,7 +226,9 @@ class TrainLineViewController: UIViewController,UITableViewDataSource,UITableVie
             let destination = segue.destinationViewController as! TransferResultViewController
             destination.StartStationName = StartStationName
             destination.DestinationName = DestinationName
-        
+            destination.StartStationImageName = StartStationImageName
+            destination.DestStationImageName = DestStationImageName
             }
     }
+   // UIImage(named:station1.imageName )
 }

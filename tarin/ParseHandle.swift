@@ -419,11 +419,11 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
     var DestStation = NSMutableString()
     var ShortTimeStatonList = NSMutableArray()
     var ShortTimeTransferInfo = NSMutableString()
-    
+    var ShortTimeLineID = NSMutableString()
    
     var ShortTransferStatonList = NSMutableArray()
     var ShortTransferTransferInfo = NSMutableString()
-    
+    var ShortTransferLineID = NSMutableString()
     var TransferData = [TransferInfo]()
     
     var temp1: String?
@@ -459,11 +459,15 @@ class ParsingInWeb_Transfer: NSObject, NSXMLParserDelegate{
             ShortTimeStatonList = []
             ShortTimeTransferInfo = NSMutableString()
             ShortTimeTransferInfo = ""
+            ShortTimeLineID = NSMutableString()
+            ShortTimeLineID = ""
             
             ShortTransferStatonList = NSMutableArray()
             ShortTransferStatonList = []
             ShortTransferTransferInfo = NSMutableString()
             ShortTransferTransferInfo = ""
+            ShortTransferLineID = NSMutableString()
+            ShortTransferLineID = ""
             temp1 = ""
             
         }

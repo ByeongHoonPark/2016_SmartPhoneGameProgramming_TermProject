@@ -1299,16 +1299,16 @@
             </objects>
             <point key="canvasLocation" x="2772" y="-1260"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Transfer Station List Table View Controller-->
         <scene sceneID="RXR-l2-EPU">
             <objects>
-                <tableViewController id="XHG-Gp-OW1" sceneMemberID="viewController">
+                <tableViewController id="XHG-Gp-OW1" customClass="TransferStationListTableViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YTV-LV-O0j">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uD1-47-M7O">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stationListCell" id="uD1-47-M7O">
                                 <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uD1-47-M7O" id="59L-er-GXh">

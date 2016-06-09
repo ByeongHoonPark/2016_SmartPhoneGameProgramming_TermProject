@@ -19,10 +19,12 @@ class TransferResultViewController: UIViewController {
     var DestinationName: String?
     var ShortTimeInfoStationList: Array<String>?
     var ShortTrasferInfoStationList: Array<String>?
-    
+    var StartStationImageName: String?
+    var DestStationImageName: String?
   var ParsingData = ParsingInWeb_Transfer()
     var filterData = [TransferInfo]()
     var test: String?
+    var test_trans: String?
     override func viewDidLoad() {
         super.viewDidLoad()
             StartLabel.text = StartStationName
@@ -42,6 +44,9 @@ class TransferResultViewController: UIViewController {
         for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.count{
             test?.appendContentsOf(ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.objectAtIndex(i) as! String)
         }
+        for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.count{
+            test_trans?.appendContentsOf(ParsingData.posts.objectAtIndex(0).valueForKey("최소환승경유역")!.objectAtIndex(i) as! String)
+        }
         
 //        let tempString = string
 //        tempString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
@@ -49,12 +54,18 @@ class TransferResultViewController: UIViewController {
 //        print(strsplit)
 
         let test2 = test?.removeWhitespace()
-        let test3 = test2?.componentsSeparatedByString(",")//test2?.characters.split(",")
+        ShortTimeInfoStationList = test2?.componentsSeparatedByString(",")//test2?.characters.split(",")
         
-        for part in test3! {
-            print(part)
-        }
+//        for part in test3! {
+//            print(part)
+//        }
         
+        let test2_trans = test_trans?.removeWhitespace()
+        ShortTrasferInfoStationList = test2_trans?.componentsSeparatedByString(",")//test2?.characters.split(",")
+        
+//        for part in test3_trans! {
+//            print(part)
+//        }
        // }
         //ShortTimeInfoLabel.text = ParsingData.posts.objectAtIndex()
         // Do any additional setup after loading the view.
@@ -66,15 +77,6 @@ class TransferResultViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 extension String {
