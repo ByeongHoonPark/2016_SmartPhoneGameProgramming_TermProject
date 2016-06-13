@@ -10,9 +10,10 @@ import UIKit
 
 class ResultTabBarController: UITabBarController {
 
-    var nameLabelText : String = ""
-    var LineNumImageText : String = ""
+    var nameLabelText : String?
+    var LineNumImageText : String?
     var LineNum: Int?
+    var Excode: String?
     override func viewDidLoad() {
         super.viewDidLoad()
     }

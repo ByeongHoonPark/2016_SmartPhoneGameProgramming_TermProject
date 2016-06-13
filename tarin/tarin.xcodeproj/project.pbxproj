@@ -52,6 +52,18 @@
 		A18E1F081D08978200ABF8E1 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = A18E1F071D08978200ABF8E1 /* next.png */; };
 		A1BE2F0B1D095BD400702ACF /* TransferStationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE2F0A1D095BD400702ACF /* TransferStationListTableViewController.swift */; };
 		A1C5BCD31D082D1C00F8C1A3 /* train2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BCD21D082D1C00F8C1A3 /* train2.png */; };
+		A1C603131D0D193600DB78DB /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C603121D0D193600DB78DB /* placeholder.png */; };
+		A1C603151D0D19FD00DB78DB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C603141D0D19FD00DB78DB /* libsqlite3.tbd */; };
+		A1C603171D0D1A0400DB78DB /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C603161D0D1A0400DB78DB /* libxml2.tbd */; };
+		A1C603191D0D1A0C00DB78DB /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C603181D0D1A0C00DB78DB /* libstdc++.6.tbd */; };
+		A1C6031B1D0D1A1300DB78DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C6031A1D0D1A1300DB78DB /* QuartzCore.framework */; };
+		A1C6031D1D0D1A1A00DB78DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C6031C1D0D1A1A00DB78DB /* CoreLocation.framework */; };
+		A1C6031F1D0D1A2400DB78DB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C6031E1D0D1A2400DB78DB /* SystemConfiguration.framework */; };
+		A1C603211D0D1A2D00DB78DB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C603201D0D1A2D00DB78DB /* OpenGLES.framework */; };
+		A1C603241D0D1A9C00DB78DB /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = A1C603231D0D1A9C00DB78DB /* DaumMap.embeddedframework */; };
+		A1C603261D0D1ABB00DB78DB /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C603251D0D1ABB00DB78DB /* DaumMap.framework */; };
+		A1C603291D0D1B1600DB78DB /* daumframework.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C603281D0D1B1600DB78DB /* daumframework.m */; };
+		A1C6032B1D0D1C4800DB78DB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6032A1D0D1C4800DB78DB /* MapViewController.swift */; };
 		A1D438D71D042225002173B3 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D61D042225002173B3 /* route.png */; };
 		A1D438DA1D0424B4002173B3 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438D91D0424B4002173B3 /* question.png */; };
 		A1D438DC1D042540002173B3 /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D438DB1D042540002173B3 /* train.png */; };
@@ -107,6 +119,19 @@
 		A18E1F071D08978200ABF8E1 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		A1BE2F0A1D095BD400702ACF /* TransferStationListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferStationListTableViewController.swift; sourceTree = "<group>"; };
 		A1C5BCD21D082D1C00F8C1A3 /* train2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train2.png; sourceTree = "<group>"; };
+		A1C603121D0D193600DB78DB /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		A1C603141D0D19FD00DB78DB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A1C603161D0D1A0400DB78DB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		A1C603181D0D1A0C00DB78DB /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		A1C6031A1D0D1A1300DB78DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A1C6031C1D0D1A1A00DB78DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A1C6031E1D0D1A2400DB78DB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A1C603201D0D1A2D00DB78DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A1C603231D0D1A9C00DB78DB /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
+		A1C603251D0D1ABB00DB78DB /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		A1C603271D0D1B1500DB78DB /* tarin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tarin-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1C603281D0D1B1600DB78DB /* daumframework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = daumframework.m; sourceTree = "<group>"; };
+		A1C6032A1D0D1C4800DB78DB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1D438D61D042225002173B3 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route.png; path = tarin/images/route.png; sourceTree = "<group>"; };
 		A1D438D91D0424B4002173B3 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = question.png; path = tarin/images/question.png; sourceTree = "<group>"; };
 		A1D438DB1D042540002173B3 /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = train.png; path = tarin/images/train.png; sourceTree = "<group>"; };
@@ -119,6 +144,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C603261D0D1ABB00DB78DB /* DaumMap.framework in Frameworks */,
+				A1C603211D0D1A2D00DB78DB /* OpenGLES.framework in Frameworks */,
+				A1C6031F1D0D1A2400DB78DB /* SystemConfiguration.framework in Frameworks */,
+				A1C6031D1D0D1A1A00DB78DB /* CoreLocation.framework in Frameworks */,
+				A1C6031B1D0D1A1300DB78DB /* QuartzCore.framework in Frameworks */,
+				A1C603191D0D1A0C00DB78DB /* libstdc++.6.tbd in Frameworks */,
+				A1C603171D0D1A0400DB78DB /* libxml2.tbd in Frameworks */,
+				A1C603151D0D19FD00DB78DB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +161,8 @@
 		A11D955D1CFAC1630002B73D = {
 			isa = PBXGroup;
 			children = (
+				A1C603251D0D1ABB00DB78DB /* DaumMap.framework */,
+				A1C603221D0D1A3C00DB78DB /* Framework */,
 				A147B3271D05574600E18A48 /* Parse */,
 				A1D438D81D04222C002173B3 /* images */,
 				A11D95681CFAC1630002B73D /* tarin */,
@@ -159,6 +194,9 @@
 				A11FFD301D07F52F00DF399A /* LineListViewController.swift */,
 				A18E1F051D088AC800ABF8E1 /* TransferResultViewController.swift */,
 				A1BE2F0A1D095BD400702ACF /* TransferStationListTableViewController.swift */,
+				A1C603281D0D1B1600DB78DB /* daumframework.m */,
+				A1C603271D0D1B1500DB78DB /* tarin-Bridging-Header.h */,
+				A1C6032A1D0D1C4800DB78DB /* MapViewController.swift */,
 			);
 			path = tarin;
 			sourceTree = "<group>";
@@ -215,6 +253,7 @@
 		A147B3611D05A8B500E18A48 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				A1C603121D0D193600DB78DB /* placeholder.png */,
 				A18E1F071D08978200ABF8E1 /* next.png */,
 				A1C5BCD21D082D1C00F8C1A3 /* train2.png */,
 				A18DF3F21D071C43004F78AB /* down-arrow.png */,
@@ -228,6 +267,21 @@
 				A18DF3F61D071CE9004F78AB /* info.png */,
 			);
 			name = UIImage;
+			sourceTree = "<group>";
+		};
+		A1C603221D0D1A3C00DB78DB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				A1C603201D0D1A2D00DB78DB /* OpenGLES.framework */,
+				A1C6031E1D0D1A2400DB78DB /* SystemConfiguration.framework */,
+				A1C6031C1D0D1A1A00DB78DB /* CoreLocation.framework */,
+				A1C6031A1D0D1A1300DB78DB /* QuartzCore.framework */,
+				A1C603181D0D1A0C00DB78DB /* libstdc++.6.tbd */,
+				A1C603161D0D1A0400DB78DB /* libxml2.tbd */,
+				A1C603141D0D19FD00DB78DB /* libsqlite3.tbd */,
+				A1C603231D0D1A9C00DB78DB /* DaumMap.embeddedframework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 		A1D438D81D04222C002173B3 /* images */ = {
@@ -305,6 +359,7 @@
 				A147B35B1D05A70100E18A48 /* 신분당선.png in Resources */,
 				A147B3501D05A70100E18A48 /* 4.png in Resources */,
 				A18DF3F71D071CE9004F78AB /* info.png in Resources */,
+				A1C603241D0D1A9C00DB78DB /* DaumMap.embeddedframework in Resources */,
 				A1D438DA1D0424B4002173B3 /* question.png in Resources */,
 				A147B3381D0595B700E18A48 /* _pin.png in Resources */,
 				A147B34E1D05A70100E18A48 /* 2.png in Resources */,
@@ -315,6 +370,7 @@
 				A147B3541D05A70100E18A48 /* 8.png in Resources */,
 				A1039D4A1D06766300EED94D /* 에버라인.png in Resources */,
 				A147B34D1D05A70100E18A48 /* 1.png in Resources */,
+				A1C603131D0D193600DB78DB /* placeholder.png in Resources */,
 				A18DF3F51D071C43004F78AB /* up-arrow.png in Resources */,
 				A147B3521D05A70100E18A48 /* 6.png in Resources */,
 				A147B34F1D05A70100E18A48 /* 3.png in Resources */,
@@ -346,6 +402,7 @@
 				A147B33B1D0597DC00E18A48 /* SearchTableViewController.swift in Sources */,
 				A11FFD311D07F52F00DF399A /* LineListViewController.swift in Sources */,
 				A1039D4E1D067F8F00EED94D /* StationInfo.swift in Sources */,
+				A1C603291D0D1B1600DB78DB /* daumframework.m in Sources */,
 				A11FFD2F1D07F39900DF399A /* LineStaionViewController.swift in Sources */,
 				A18E1F061D088AC800ABF8E1 /* TransferResultViewController.swift in Sources */,
 				A11D956C1CFAC1630002B73D /* ViewController.swift in Sources */,
@@ -353,6 +410,7 @@
 				A11D956A1CFAC1630002B73D /* AppDelegate.swift in Sources */,
 				A1039D4C1D067B8E00EED94D /* SearchStationNameViewController.swift in Sources */,
 				A18DF3FB1D0728E1004F78AB /* DownResultViewController.swift in Sources */,
+				A1C6032B1D0D1C4800DB78DB /* MapViewController.swift in Sources */,
 				A18DF3F91D0726D9004F78AB /* ResultTabBarController.swift in Sources */,
 				A147B3311D05706200E18A48 /* LineView.swift in Sources */,
 				A147B3291D05576C00E18A48 /* ParseHandle.swift in Sources */,
@@ -471,10 +529,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
 				INFOPLIST_FILE = tarin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kpu.2016class.tarin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tarin/tarin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -483,10 +550,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
 				INFOPLIST_FILE = tarin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kpu.2016class.tarin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tarin/tarin-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

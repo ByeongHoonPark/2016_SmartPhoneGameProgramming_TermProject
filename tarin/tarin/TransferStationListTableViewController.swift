@@ -27,31 +27,31 @@ class TransferStationListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         StartStationName2 = StartStationName
-         DestinationName2 = DestinationName
-         ShortTimeInfoStationList2 = ShortTimeInfoStationList
-         ShortTrasferInfoStationList2 = ShortTrasferInfoStationList
-         StartStationImageName2 = StartStationImageName
-         DestStationImageName2 = DestStationImageName
+        DestinationName2 = DestinationName
+        ShortTimeInfoStationList2 = ShortTimeInfoStationList
+        ShortTrasferInfoStationList2 = ShortTrasferInfoStationList
+        StartStationImageName2 = StartStationImageName
+        DestStationImageName2 = DestStationImageName
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
     // MARK: - Table View
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
+        
         var count = 0
         if selectMode == 1
         {
@@ -62,24 +62,24 @@ class TransferStationListTableViewController: UITableViewController {
             count = ShortTrasferInfoStationList2!.count
         }
         return count
-       
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("stationListCell", forIndexPath: indexPath)
         if selectMode == 1
         {
-          cell.textLabel!.text =  ShortTimeInfoStationList2![indexPath.row]
+            cell.textLabel!.text =  ShortTimeInfoStationList2![indexPath.row]
         }
         else if selectMode == 2
         {
             cell.textLabel!.text =  ShortTrasferInfoStationList2![indexPath.row]
         }
         
-
+        
         //candy.name
         return cell
     }
     
-   
+    
 }
