@@ -32,15 +32,12 @@ class TransferResultViewController: UIViewController {
         StartLabel.text = StartStationName
         DestLabel.text = DestinationName
         ParsingData.beginParsing(StartStationName!, destStation: DestinationName!)
-        print("완료")
         test = ""
         test_trans = ""
-        //ShortTimeInfoLabel.text
         filterData = ParsingData.TransferData.filter({(info: TransferInfo) ->Bool in
             return info.StartStation == StartStationName
         })
-        //   for i in 0 ..< ParsingData.posts.count
-        //  {
+
         ShortTimeInfoLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("최단경로정보") as! NSString as String
         ShortTrasferInfoLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("최소환승정보") as! NSString as String
         for i in 0 ..< ParsingData.posts.objectAtIndex(0).valueForKey("최단경로경유역")!.count{
@@ -54,27 +51,13 @@ class TransferResultViewController: UIViewController {
         }
         StartImage.image = UIImage(named:StartStationImageName! )
         DestImage.image = UIImage(named:DestStationImageName! )
-        //        let tempString = string
-        //        tempString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        //        let strsplit = tempString.characters.split(",")
-        //        print(strsplit)
         
         let test2 = test?.removeWhitespace()
-        ShortTimeInfoStationList = test2?.componentsSeparatedByString(",")//test2?.characters.split(",")
-        
-        //        for part in test3! {
-        //            print(part)
-        //        }
+        ShortTimeInfoStationList = test2?.componentsSeparatedByString(",")
         
         let test2_trans = test_trans?.removeWhitespace()
-        ShortTrasferInfoStationList = test2_trans?.componentsSeparatedByString(",")//test2?.characters.split(",")
-        
-        //        for part in test3_trans! {
-        //            print(part)
-        //        }
-        // }
-        //ShortTimeInfoLabel.text = ParsingData.posts.objectAtIndex()
-        // Do any additional setup after loading the view.
+        ShortTrasferInfoStationList = test2_trans?.componentsSeparatedByString(",")
+
     }
     
     override func didReceiveMemoryWarning() {

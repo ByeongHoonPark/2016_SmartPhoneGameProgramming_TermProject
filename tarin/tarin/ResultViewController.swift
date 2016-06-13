@@ -41,7 +41,6 @@ class ResultViewController: UIViewController {
         LineNumImageText = ((self.tabBarController as? ResultTabBarController)?.LineNumImageText!)!
         LineNum = (self.tabBarController as? ResultTabBarController)?.LineNum!
         Excode = ((self.tabBarController as? ResultTabBarController)?.Excode)!
-        //   trainImage.image
         stationNameLabel.text = nameLabelText
         stationLineNumImage.image = UIImage(named: LineNumImageText)
         UIDesignView.line = LineNum!
@@ -51,8 +50,6 @@ class ResultViewController: UIViewController {
         var trimmedtext: String = nameLabelText
         if nameLabelText.lowercaseString.containsString(String("(경의중앙선)").lowercaseString)
         {
-            //encodedString?.removeRange(Range<String.Index>(start: encodedString!.endIndex.advancedBy(-9),end: encodedString!.endIndex))
-            //trimmedtext = nameLabelText
             trimmedtext.removeRange(Range<String.Index>(start: trimmedtext.endIndex.advancedBy(-7), end: trimmedtext.endIndex))
             print(trimmedtext)
         }
@@ -136,7 +133,6 @@ class ResultViewController: UIViewController {
             firsttarin.origin.x = 256 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
             self.trainImage.frame = firsttarin
-            //self.trainImage
         }
         else if posLabel.text! == "전역 출발"
         {
@@ -148,7 +144,6 @@ class ResultViewController: UIViewController {
             UIView.animateWithDuration(70.0, animations: {
                 self.trainImage.frame = CGRectMake(400.0 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
             })
-            //self.trainImage
         }
         else if posLabel.text! == "\(stationNameLabel.text!) 도착"
         {
@@ -157,7 +152,6 @@ class ResultViewController: UIViewController {
             firsttarin.origin.x = 512 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
             self.trainImage.frame = firsttarin
-            //self.trainImage
         }
         else if posLabel.text! == "\(stationNameLabel.text!) 진입"
         {
@@ -169,7 +163,6 @@ class ResultViewController: UIViewController {
             UIView.animateWithDuration(30.0, animations: {
                 self.trainImage.frame = CGRectMake(512 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
             })
-            //self.trainImage
         }
         else
         {
@@ -190,7 +183,6 @@ class ResultViewController: UIViewController {
             firsttarin.origin.x = 256 - self.trainImage2.frame.size.width/2
             firsttarin.origin.y = 615
             self.trainImage2.frame = firsttarin
-            //self.trainImage
         }
         else if posLabel2.text! == "전역 출발"
         {
@@ -202,7 +194,6 @@ class ResultViewController: UIViewController {
             UIView.animateWithDuration(70.0, animations: {
                 self.trainImage2.frame = CGRectMake(400.0 - self.trainImage2.frame.size.width/2, 615, self.trainImage2.frame.size.width, self.trainImage2.frame.size.height)
             })
-            //self.trainImage
         }
         else if posLabel2.text! == "\(stationNameLabel.text!) 도착"
         {
@@ -211,7 +202,6 @@ class ResultViewController: UIViewController {
             firsttarin.origin.x = 512 - self.trainImage2.frame.size.width/2
             firsttarin.origin.y = 615
             self.trainImage2.frame = firsttarin
-            //self.trainImage
         }
         else if posLabel2.text! == "\(stationNameLabel.text!) 진입"
         {
@@ -223,7 +213,6 @@ class ResultViewController: UIViewController {
             UIView.animateWithDuration(30.0, animations: {
                 self.trainImage2.frame = CGRectMake(512 - self.trainImage2.frame.size.width/2, 615, self.trainImage2.frame.size.width, self.trainImage2.frame.size.height)
             })
-            //self.trainImage
         }
         else
         {

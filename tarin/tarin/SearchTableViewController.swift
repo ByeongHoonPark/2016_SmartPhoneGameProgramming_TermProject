@@ -107,10 +107,8 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate, UISe
                     stations = ParsingData.stations[indexPath.row]
                 }
                 
-                
                 destination.nameLabelText = stations.name
                 destination.LineNumImageText = stations.imageName
-
                 destination.Excode = stations.externalCode
                 switch stations.lineNumber
                 {

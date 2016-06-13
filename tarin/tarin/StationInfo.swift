@@ -12,9 +12,6 @@ class StationInfo{
     var externalCode: String
     var lineNumber : String
     var imageName : String
-    //var index : Int
-    // var latitude : Float // wi do
-    //var longtitude : Float // kyung do
     
     init(name: String, externalCode: String, lineNumber: String, imageName: String)
     {
@@ -22,7 +19,6 @@ class StationInfo{
         self.externalCode   = externalCode
         self.lineNumber = lineNumber
         self.imageName = imageName
-      //  self.index = index
     }
 }
 class RealTimeInfo{
@@ -35,9 +31,6 @@ class RealTimeInfo{
     var arriveStatus : String
     var arriveTime : String
     var arriveStatus2 : String
-    //var index : Int
-    // var latitude : Float // wi do
-    //var longtitude : Float // kyung do
     
     init(subWayId : String,updnLine : String,trainDestination: String,trainKind : String,stationName : String,arriveStatus : String,arriveTime : String,arriveStatus2 : String)
     {
@@ -61,9 +54,6 @@ class TransferInfo{
     
     var ShortTransferStatonList : Array<String>
     var ShortTransferTransferInfo : String
-    //var index : Int
-    // var latitude : Float // wi do
-    //var longtitude : Float // kyung do
     
     init(StartStation : String,DestStation : String,ShortTimeStatonList: Array<String>,ShortTimeTransferInfo : String,ShortTransferStatonList : Array<String>,ShortTransferTransferInfo : String)
     {
