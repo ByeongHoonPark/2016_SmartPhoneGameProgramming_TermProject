@@ -38,7 +38,7 @@ class DownResultViewController: UIViewController {
         downUIDesignView.line = ((self.tabBarController as? ResultTabBarController)?.LineNum)!
         Excode = ((self.tabBarController as? ResultTabBarController)?.Excode)!
         
-        
+        LineNum = (self.tabBarController as? ResultTabBarController)?.LineNum!
         downCurrentStationNameLabel.text = downStationNameLabel.text
         currentStationLabel2.text = downStationNameLabel.text
 
@@ -60,12 +60,12 @@ class DownResultViewController: UIViewController {
             return station.updnLine == "하행" || station.updnLine == "내선"
         })
         
-        
-        for var index in 0 ..< Upward.count
+        print("gg")
+        for var index in 0 ..< Downward.count
         {
             var line = 0
             
-            switch Upward[index].subWayId {
+            switch Downward[index].subWayId {
             case "1001":
                 line = 1
                 
@@ -143,18 +143,18 @@ class DownResultViewController: UIViewController {
         
     }
     override func viewDidAppear(animated: Bool) {
-        if posLabel.text! == "전역 도착"
+        if downCurrentStateLabel.text! == "전역 도착"
         {
-            print(posLabel.text!)
+            print(downCurrentStateLabel.text!)
             var firsttarin = self.trainImage.frame
             firsttarin.origin.x = 256 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
             self.trainImage.frame = firsttarin
             //self.trainImage
         }
-        else if posLabel.text! == "전역 출발"
+        else if downCurrentStateLabel.text! == "전역 출발"
         {
-            print(posLabel.text!)
+            print(downCurrentStateLabel.text!)
             var firsttarin = self.trainImage.frame
             firsttarin.origin.x = 256 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
@@ -164,18 +164,18 @@ class DownResultViewController: UIViewController {
             })
             //self.trainImage
         }
-        else if posLabel.text! == "\(stationNameLabel.text!) 도착"
+        else if downCurrentStateLabel.text! == "\(downStationNameLabel.text!) 도착"
         {
-            print(posLabel.text!)
+            print(downCurrentStateLabel.text!)
             var firsttarin = self.trainImage.frame
             firsttarin.origin.x = 512 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
             self.trainImage.frame = firsttarin
             //self.trainImage
         }
-        else if posLabel.text! == "\(stationNameLabel.text!) 진입"
+        else if downCurrentStateLabel.text! == "\(downStationNameLabel.text!) 진입"
         {
-            print(posLabel.text!)
+            print(downCurrentStateLabel.text!)
             var firsttarin = self.trainImage.frame
             firsttarin.origin.x = 400.0 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
@@ -203,14 +203,14 @@ class DownResultViewController: UIViewController {
     }
     func SetLabel(index: Int)
     {
-        posLabel.text = Upward[index].arriveStatus
+        downCurrentStateLabel.text = Downward[index].arriveStatus
         print(Upward[index].arriveStatus)
-        destLabel.text = Upward[index].trainDestination
+        downDestLabel.text = Downward[index].trainDestination
         print(Upward[index].trainDestination)
         
-        posLabel2.text = Upward[index].arriveStatus
+        currentStateLabel2.text = Downward[index].arriveStatus
         print(Upward[index].arriveStatus)
-        destLabel2.text = Upward[index].trainDestination
+        destLabel2.text = Downward[index].trainDestination
         print(Upward[index].trainDestination)
     }
 

@@ -18,16 +18,11 @@ class MapViewController: UIViewController, MTMapViewDelegate {
     let stationInfoParsig = parsingData()
     var latitude: Double?
     var longitude: Double?
-    var stationAddress: String?
-    var stationName: String?
     var stationExcode: String?
-    var stationTelephoneNum: String?
-    var stationFax: String?
-    var infoTesk: Bool? // 관광안내소
-    var obstacle: Bool? // 장애인 시설
-    var meetplace: Bool? // 만남의장소
-    var bycicle: Bool? // 자전거 보관소
-    var nursing: Bool? // 수유시설
+    var stationName: String?
+    var stationAddress: String?
+    
+
     
     
     
