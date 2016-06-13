@@ -24,6 +24,14 @@ class AboutViewController: UIViewController {
         flaticon.editable = false
         flaticon.dataDetectorTypes = .All
         flaticon.text = "Flaticon\n" + "http://www.flaticon.com/"
+        freepik.linkTextAttributes = [NSForegroundColorAttributeName: UIColor.blueColor(), NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue]
+        freepik.editable = false
+        freepik.dataDetectorTypes = .All
+        freepik.text = "http://www.flaticon.com/authors/freepik"
+        google.linkTextAttributes = [NSForegroundColorAttributeName: UIColor.blueColor(), NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue]
+        google.editable = false
+        google.dataDetectorTypes = .All
+        google.text = "http://www.flaticon.com/authors/google"
         
         // Do any additional setup after loading the view.
     }

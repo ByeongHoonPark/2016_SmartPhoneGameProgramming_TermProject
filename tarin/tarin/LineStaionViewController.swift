@@ -118,6 +118,7 @@ class LineStaionViewController: UIViewController,UITableViewDataSource, UITableV
                 }
                 destination.nameLabelText = stations.name
                 destination.LineNumImageText = stations.imageName
+                destination.Excode = stations.externalCode
                 switch stations.lineNumber
                 {
                 case "신분당선":
