@@ -14,6 +14,20 @@ class DetailResultViewController: UIViewController {
       @IBOutlet weak var detailNameLabel: UILabel!
       @IBOutlet weak var detailLineImage: UIImageView!
       @IBOutlet weak var detailUIDesignView: DetailLineView!
+    @IBOutlet weak var infoFaceImage: UIImageView!
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var obstacleFaceImage: UIImageView!
+    @IBOutlet weak var obstacleLabel: UILabel!
+    @IBOutlet weak var meetFaceImage: UIImageView!
+    @IBOutlet weak var meetLabel: UILabel!
+    @IBOutlet weak var bikeFaceImage: UIImageView!
+    @IBOutlet weak var bikeLabel: UILabel!
+    @IBOutlet weak var nursingFaceImage: UIImageView!
+    @IBOutlet weak var nursingLabel: UILabel!
+    @IBOutlet weak var elevatorFaceImage: UIImageView!
+    @IBOutlet weak var elevatorLabel: UILabel!
+    @IBOutlet weak var teleLabel: UILabel!
+    @IBOutlet weak var faxLabel: UILabel!
     var Excode: String = ""
     var nameLabelText : String = ""
     var LineNumImageText : String = ""
@@ -70,41 +84,71 @@ class DetailResultViewController: UIViewController {
             stationFax = GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "FAX", DataNum: 0)
             if (GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "INFOTESK", DataNum: 0) == "Y"){
                 infoTesk = "있음"
+                infoFaceImage.image = UIImage(named: "happy.png")
+                infoLabel.text = infoTesk
             }
             else{
                 infoTesk = "없음"
+                infoFaceImage.image = UIImage(named: "sad.png")
+                infoLabel.text = infoTesk
+
             }
             if (GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "OBSTACLE", DataNum: 0) == "Y"){
                 obstacle = "있음"
+                obstacleFaceImage.image = UIImage(named: "happy.png")
+                obstacleLabel.text = obstacle
             }
             else{
                 obstacle = "없음"
+                obstacleFaceImage.image = UIImage(named: "sad.png")
+                obstacleLabel.text = obstacle
             }
             if (GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "MEETPLACE", DataNum: 0) == "Y"){
                 meetplace = "있음"
+                meetFaceImage.image = UIImage(named: "happy.png")
+                meetLabel.text = meetplace
             }
             else{
                 meetplace = "없음"
+                meetFaceImage.image = UIImage(named: "sad.png")
+                meetLabel.text = meetplace
             }
             if (GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "BICYCLE", DataNum: 0) == "Y"){
                 bycicle = "있음"
+                bikeFaceImage.image = UIImage(named: "happy.png")
+                bikeLabel.text = bycicle
             }
             else{
                 bycicle = "없음"
+                bikeFaceImage.image = UIImage(named: "sad.png")
+                bikeLabel.text = bycicle
             }
             if (GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "NURSING", DataNum: 0) == "Y"){
                 nursing = "있음"
+                nursingFaceImage.image = UIImage(named: "happy.png")
+                nursingLabel.text = nursing
             }
             else{
                 nursing = "없음"
+                nursingFaceImage.image = UIImage(named: "sad.png")
+                nursingLabel.text = nursing
             }
             if (GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "ELEVATOR", DataNum: 0) == "Y"){
                 elevator = "있음"
+                elevatorFaceImage.image = UIImage(named: "happy.png")
+                elevatorLabel.text = elevator
             }
             else{
                 elevator = "없음"
+                elevatorFaceImage.image = UIImage(named: "sad.png")
+                elevatorLabel.text = elevator
             }
-            
+            teleLabel.text = stationTelephoneNum
+            if stationFax == nil
+            {
+                faxLabel.text = "없음"
+            }
+            faxLabel.text = stationFax
             
 //            infoTesk = GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "INFOTESK", DataNum: 0)// 관광안내소
 //            obstacle = GetParsing.beginParsing(siteURL, motherData: "row", ChildData: "OBSTACLE", DataNum: 0)// 장애인 시설

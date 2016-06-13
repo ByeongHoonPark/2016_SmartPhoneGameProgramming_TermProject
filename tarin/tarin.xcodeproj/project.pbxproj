@@ -58,6 +58,8 @@
 		A1A44E351D0ED879007A28E6 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A44E2D1D0ED879007A28E6 /* meeting.png */; };
 		A1A44E361D0ED879007A28E6 /* silhouette-on-wheelchair.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A44E2E1D0ED879007A28E6 /* silhouette-on-wheelchair.png */; };
 		A1A44E371D0ED879007A28E6 /* info (1).png in Resources */ = {isa = PBXBuildFile; fileRef = A1A44E2F1D0ED879007A28E6 /* info (1).png */; };
+		A1A44E3A1D0EDCCC007A28E6 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A44E381D0EDCCC007A28E6 /* sad.png */; };
+		A1A44E3B1D0EDCCC007A28E6 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A44E391D0EDCCC007A28E6 /* happy.png */; };
 		A1BE2F0B1D095BD400702ACF /* TransferStationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE2F0A1D095BD400702ACF /* TransferStationListTableViewController.swift */; };
 		A1C5BCD31D082D1C00F8C1A3 /* train2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C5BCD21D082D1C00F8C1A3 /* train2.png */; };
 		A1C603131D0D193600DB78DB /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C603121D0D193600DB78DB /* placeholder.png */; };
@@ -133,6 +135,8 @@
 		A1A44E2D1D0ED879007A28E6 /* meeting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting.png; sourceTree = "<group>"; };
 		A1A44E2E1D0ED879007A28E6 /* silhouette-on-wheelchair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "silhouette-on-wheelchair.png"; sourceTree = "<group>"; };
 		A1A44E2F1D0ED879007A28E6 /* info (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info (1).png"; sourceTree = "<group>"; };
+		A1A44E381D0EDCCC007A28E6 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		A1A44E391D0EDCCC007A28E6 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 		A1BE2F0A1D095BD400702ACF /* TransferStationListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferStationListTableViewController.swift; sourceTree = "<group>"; };
 		A1C5BCD21D082D1C00F8C1A3 /* train2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train2.png; sourceTree = "<group>"; };
 		A1C603121D0D193600DB78DB /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 				A1D438D61D042225002173B3 /* route.png */,
 				A1D438DD1D04298C002173B3 /* linemap_naver.png */,
 				A18DF3F61D071CE9004F78AB /* info.png */,
+				A1A44E381D0EDCCC007A28E6 /* sad.png */,
+				A1A44E391D0EDCCC007A28E6 /* happy.png */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 				A1A44E331D0ED879007A28E6 /* feeder.png in Resources */,
 				A1C603241D0D1A9C00DB78DB /* DaumMap.embeddedframework in Resources */,
 				A1D438DA1D0424B4002173B3 /* question.png in Resources */,
+				A1A44E3B1D0EDCCC007A28E6 /* happy.png in Resources */,
 				A147B3381D0595B700E18A48 /* _pin.png in Resources */,
 				A147B34E1D05A70100E18A48 /* 2.png in Resources */,
 				A11D95741CFAC1630002B73D /* LaunchScreen.storyboard in Resources */,
@@ -402,6 +409,7 @@
 				A147B34D1D05A70100E18A48 /* 1.png in Resources */,
 				A1C603131D0D193600DB78DB /* placeholder.png in Resources */,
 				A18DF3F51D071C43004F78AB /* up-arrow.png in Resources */,
+				A1A44E3A1D0EDCCC007A28E6 /* sad.png in Resources */,
 				A1A44E321D0ED879007A28E6 /* elevator.png in Resources */,
 				A147B3521D05A70100E18A48 /* 6.png in Resources */,
 				A1A44E301D0ED879007A28E6 /* fax.png in Resources */,

@@ -1084,91 +1084,139 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="kuv-ve-ZHY">
-                                <rect key="frame" x="44" y="425" width="100" height="100"/>
+                                <rect key="frame" x="65" y="401" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTh-Y2-ebz">
-                                <rect key="frame" x="219" y="425" width="100" height="100"/>
+                                <rect key="frame" x="240" y="401" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="silhouette-on-wheelchair.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-DK-OTI">
-                                <rect key="frame" x="450" y="425" width="100" height="100"/>
+                                <rect key="frame" x="428" y="400" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xab-Wi-ypc">
-                                <rect key="frame" x="625" y="425" width="100" height="100"/>
+                                <rect key="frame" x="603" y="400" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meeting.png" translatesAutoresizingMaskIntoConstraints="NO" id="qhl-vc-4i4">
-                                <rect key="frame" x="44" y="583" width="100" height="100"/>
+                                <rect key="frame" x="65" y="547" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1AU-TS-ua9">
-                                <rect key="frame" x="219" y="583" width="100" height="100"/>
+                                <rect key="frame" x="240" y="547" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bike.png" translatesAutoresizingMaskIntoConstraints="NO" id="dUR-G9-UyC">
-                                <rect key="frame" x="450" y="583" width="100" height="100"/>
+                                <rect key="frame" x="428" y="546" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2x-Gg-z3r">
-                                <rect key="frame" x="625" y="583" width="100" height="100"/>
+                                <rect key="frame" x="603" y="546" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="feeder.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqj-09-RrS">
-                                <rect key="frame" x="44" y="754" width="100" height="100"/>
+                                <rect key="frame" x="65" y="700" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oed-US-Mdw">
-                                <rect key="frame" x="219" y="754" width="100" height="100"/>
+                                <rect key="frame" x="240" y="700" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elevator.png" translatesAutoresizingMaskIntoConstraints="NO" id="hfV-oq-VOM">
-                                <rect key="frame" x="450" y="754" width="100" height="100"/>
+                                <rect key="frame" x="428" y="699" width="100" height="100"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B66-in-eOp">
-                                <rect key="frame" x="625" y="754" width="100" height="100"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telephone.png" translatesAutoresizingMaskIntoConstraints="NO" id="JY9-Ya-uaG">
-                                <rect key="frame" x="69" y="919" width="50" height="50"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fax.png" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-Zf-0GD">
-                                <rect key="frame" x="450" y="919" width="50" height="50"/>
+                                <rect key="frame" x="603" y="699" width="100" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="관광안내소" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvL-E9-xZp">
-                                <rect key="frame" x="57" y="533" width="74" height="21"/>
+                                <rect key="frame" x="78" y="509" width="74" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="장애인시설" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moy-rn-7kQ">
-                                <rect key="frame" x="463" y="533" width="74" height="21"/>
+                                <rect key="frame" x="441" y="508" width="74" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="만남의광장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5Y-QG-BQf">
-                                <rect key="frame" x="57" y="691" width="74" height="21"/>
+                                <rect key="frame" x="78" y="655" width="74" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자전거보관소" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF8-EL-FrR">
-                                <rect key="frame" x="456" y="691" width="89" height="21"/>
+                                <rect key="frame" x="434" y="654" width="89" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="수유방" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVk-UR-dNF">
-                                <rect key="frame" x="57" y="862" width="74" height="21"/>
+                                <rect key="frame" x="78" y="808" width="74" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="엘레베이터" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUm-n9-nur">
-                                <rect key="frame" x="463" y="862" width="74" height="21"/>
+                                <rect key="frame" x="441" y="807" width="74" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여부" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AZ-ha-796">
+                                <rect key="frame" x="275" y="508" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여부" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6j-1s-8tI">
+                                <rect key="frame" x="638" y="508" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여부" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1v-do-PWE">
+                                <rect key="frame" x="275" y="655" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여부" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0Q-nU-fAH">
+                                <rect key="frame" x="638" y="654" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여부" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-pt-2ka">
+                                <rect key="frame" x="275" y="808" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여부" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-Ln-ua3">
+                                <rect key="frame" x="638" y="807" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telephone.png" translatesAutoresizingMaskIntoConstraints="NO" id="JY9-Ya-uaG">
+                                <rect key="frame" x="90" y="851" width="50" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fax.png" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-Zf-0GD">
+                                <rect key="frame" x="453" y="851" width="50" height="50"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전화번호" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVn-dn-9GH">
-                                <rect key="frame" x="57" y="977" width="74" height="21"/>
+                                <rect key="frame" x="78" y="909" width="74" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUv-Sw-ceB">
-                                <rect key="frame" x="463" y="976" width="32" height="21"/>
+                                <rect key="frame" x="466" y="908" width="32" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000-1234-5678" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHR-Js-Xp0">
+                                <rect key="frame" x="231" y="880" width="118" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000-1234-5678" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kR-94-ifd">
+                                <rect key="frame" x="594" y="879" width="118" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1179,9 +1227,23 @@
                     <tabBarItem key="tabBarItem" title="역정보" image="info.png" id="6ID-bw-P7i"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="bikeFaceImage" destination="j2x-Gg-z3r" id="kCt-1y-bjM"/>
+                        <outlet property="bikeLabel" destination="l0Q-nU-fAH" id="hcU-vh-NCb"/>
                         <outlet property="detailLineImage" destination="0dE-jm-X60" id="k7h-QZ-2Hh"/>
                         <outlet property="detailNameLabel" destination="uq2-0m-Kgu" id="niu-5c-mLm"/>
                         <outlet property="detailUIDesignView" destination="Jp3-0i-wEM" id="n6M-pX-Kro"/>
+                        <outlet property="elevatorFaceImage" destination="B66-in-eOp" id="vRS-Jf-H8c"/>
+                        <outlet property="elevatorLabel" destination="h6U-Ln-ua3" id="p6h-Uu-ylc"/>
+                        <outlet property="faxLabel" destination="9kR-94-ifd" id="Jax-PD-HYc"/>
+                        <outlet property="infoFaceImage" destination="KTh-Y2-ebz" id="bVX-YA-FXH"/>
+                        <outlet property="infoLabel" destination="8AZ-ha-796" id="Xjj-iC-hpX"/>
+                        <outlet property="meetFaceImage" destination="1AU-TS-ua9" id="ms7-Ef-PkW"/>
+                        <outlet property="meetLabel" destination="h1v-do-PWE" id="6O9-rP-rwW"/>
+                        <outlet property="nursingFaceImage" destination="oed-US-Mdw" id="7oe-Zu-4W9"/>
+                        <outlet property="nursingLabel" destination="L9E-pt-2ka" id="U9z-jV-uCw"/>
+                        <outlet property="obstacleFaceImage" destination="xab-Wi-ypc" id="rAX-0e-ocy"/>
+                        <outlet property="obstacleLabel" destination="Y6j-1s-8tI" id="51p-vI-7WK"/>
+                        <outlet property="teleLabel" destination="lHR-Js-Xp0" id="5Jb-AS-B5R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qG4-dl-HTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
