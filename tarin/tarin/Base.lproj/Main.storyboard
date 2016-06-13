@@ -980,15 +980,54 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MdE-JL-1Lh" customClass="RailView" customModule="tarin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="664" width="768" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="train2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mdT-D7-ltU">
+                                <rect key="frame" x="100" y="620" width="75" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동대문역사문화공원" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-cH-JSX">
+                                <rect key="frame" x="445" y="692" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전역" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usF-9g-Pw0">
+                                <rect key="frame" x="241" y="692" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동인천행 - 중동방면 (급행)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-fy-D66">
+                                <rect key="frame" x="295" y="584" width="179" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[6]번째 전역 (동대문역사문화공원)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-su-B4y">
+                                <rect key="frame" x="20" y="604" width="234" height="21"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="하행" image="down-arrow.png" id="uyN-SZ-Wsh" userLabel="하행"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="currentStateLabel2" destination="eAW-su-B4y" id="DN8-IP-sos"/>
+                        <outlet property="currentStationLabel2" destination="SyC-cH-JSX" id="rfG-qf-f35"/>
+                        <outlet property="destLabel2" destination="Lbb-fy-D66" id="Z6H-v6-ofj"/>
+                        <outlet property="downCurrentStateLabel" destination="8SH-Bb-2VG" id="l5L-cW-pSa"/>
+                        <outlet property="downCurrentStationNameLabel" destination="ztS-Ad-Gtw" id="oRO-nK-4Ge"/>
+                        <outlet property="downDestLabel" destination="duy-zh-Nmt" id="BMG-6b-hTM"/>
                         <outlet property="downStationLineNumImage" destination="Km2-0d-fF6" id="Uwy-9e-SMP"/>
                         <outlet property="downStationNameLabel" destination="kMw-pb-oHU" id="icX-4T-JcT"/>
                         <outlet property="downUIDesignView" destination="V1A-Z3-Ijv" id="GHe-1v-pTi"/>
+                        <outlet property="tarinImage2" destination="mdT-D7-ltU" id="bk9-aZ-lSU"/>
+                        <outlet property="trainImage" destination="1cq-hP-zmf" id="5vC-4d-Ibf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuS-rN-Ecl" userLabel="First Responder" sceneMemberID="firstResponder"/>

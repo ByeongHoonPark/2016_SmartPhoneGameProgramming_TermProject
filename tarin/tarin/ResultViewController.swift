@@ -61,7 +61,7 @@ class ResultViewController: UIViewController {
             return station.updnLine == "상행" || station.updnLine == "외선"
         })
         Downward = ParsingData.RealTimestations.filter({(station: RealTimeInfo) -> Bool in
-            return station.updnLine == "상행" || station.updnLine == "내선"
+            return station.updnLine == "하행" || station.updnLine == "내선"
         })
        
         
@@ -212,10 +212,10 @@ print("1")
         destLabel.text = Upward[index].trainDestination
         print(Upward[index].trainDestination)
         
-        posLabel2.text = Downward[index].arriveStatus
-        print(Downward[index].arriveStatus)
+        posLabel2.text = Upward[index].arriveStatus
+        print(Upward[index].arriveStatus)
         destLabel2.text = Upward[index].trainDestination
-        print(Downward[index].trainDestination)
+        print(Upward[index].trainDestination)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
