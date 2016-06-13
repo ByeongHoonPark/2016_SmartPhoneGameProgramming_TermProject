@@ -40,7 +40,7 @@ class ParsingInWeb_RealTimeArrival: NSObject, NSXMLParserDelegate{
         posts = NSMutableArray()
         posts = []
         
-        let original = String("http://swopenAPI.seoul.go.kr/api/subway/785943436365657038384c4f4e7078/xml/realtimeStationArrival/0/5/\(stationname)")
+        let original = String("http://swopenAPI.seoul.go.kr/api/subway/785943436365657038384c4f4e7078/xml/realtimeStationArrival/0/20/\(stationname)")
         var encodedString = original.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         //encodedString?.removeRange(Range<String.Index>(start: encodedString!.endIndex.advancedBy(-6),end: encodedString!.endIndex))
 
