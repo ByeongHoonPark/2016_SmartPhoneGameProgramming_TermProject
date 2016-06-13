@@ -23,6 +23,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var destLabel2: UILabel!
     @IBOutlet weak var posLabel2: UILabel!
     @IBOutlet weak var CurrentStationLabel2: UILabel!
+    @IBOutlet weak var trainImage2: UIImageView!
     var nameLabelText : String = ""
     var LineNumImageText : String = ""
     var LineNum: Int?
@@ -121,30 +122,11 @@ class ResultViewController: UIViewController {
             }
             if LineNum == line
             {
-                SetLabel(index)
+                realtimeinfo.append(Upward[index])
             }
         }
-print("1")
-//        posLabel.text = Upward[0].arriveStatus
-//        print(Upward[0].arriveStatus)
-//        destLabel.text = Upward[0].trainDestination
-//        print(Upward[0].trainDestination)
-//        
-//        posLabel2.text = Downward[0].arriveStatus
-//        print(Downward[0].arriveStatus)
-//        destLabel2.text = Upward[0].trainDestination
-//        print(Downward[0].trainDestination)
-        
-      //  destLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("행선지") as! NSString as String
-       // posLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("도착정보") as! NSString as String
-        //destLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("행선지") as! NSString as String
-       // ParsingData.posts.filter(<#T##includeElement: (AnyObject) throws -> Bool##(AnyObject) throws -> Bool#>)
-        
-//        posLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("도착정보") as! NSString as String
-//        destLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("행선지") as! NSString as String
-//        posLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("도착정보") as! NSString as String
-//        destLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("행선지") as! NSString as String
-     
+        SetLabel()
+
     }
     override func viewDidAppear(animated: Bool) {
         if posLabel.text! == "전역 도착"
@@ -201,21 +183,79 @@ print("1")
 
         }
         
-//        UIView.animateWithDuration(50.0, animations: {
-//            self.trainImage.frame = CGRectMake(256.0 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
-//        })
+        if posLabel2.text! == "전역 도착"
+        {
+            print(posLabel2.text!)
+            var firsttarin = self.trainImage2.frame
+            firsttarin.origin.x = 256 - self.trainImage2.frame.size.width/2
+            firsttarin.origin.y = 615
+            self.trainImage2.frame = firsttarin
+            //self.trainImage
+        }
+        else if posLabel2.text! == "전역 출발"
+        {
+            print(posLabel2.text!)
+            var firsttarin = self.trainImage2.frame
+            firsttarin.origin.x = 256 - self.trainImage2.frame.size.width/2
+            firsttarin.origin.y = 615
+            self.trainImage2.frame = firsttarin
+            UIView.animateWithDuration(70.0, animations: {
+                self.trainImage2.frame = CGRectMake(400.0 - self.trainImage2.frame.size.width/2, 615, self.trainImage2.frame.size.width, self.trainImage2.frame.size.height)
+            })
+            //self.trainImage
+        }
+        else if posLabel2.text! == "\(stationNameLabel.text!) 도착"
+        {
+            print(posLabel2.text!)
+            var firsttarin = self.trainImage2.frame
+            firsttarin.origin.x = 512 - self.trainImage2.frame.size.width/2
+            firsttarin.origin.y = 615
+            self.trainImage2.frame = firsttarin
+            //self.trainImage
+        }
+        else if posLabel2.text! == "\(stationNameLabel.text!) 진입"
+        {
+            print(posLabel.text!)
+            var firsttarin = self.trainImage2.frame
+            firsttarin.origin.x = 400.0 - self.trainImage2.frame.size.width/2
+            firsttarin.origin.y = 615
+            self.trainImage2.frame = firsttarin
+            UIView.animateWithDuration(30.0, animations: {
+                self.trainImage2.frame = CGRectMake(512 - self.trainImage2.frame.size.width/2, 615, self.trainImage2.frame.size.width, self.trainImage2.frame.size.height)
+            })
+            //self.trainImage
+        }
+        else
+        {
+            var firsttarin = self.trainImage2.frame
+            firsttarin.origin.x = 100 - self.trainImage2.frame.size.width/2
+            firsttarin.origin.y = 615
+            self.trainImage2.frame = firsttarin
+            UIView.animateWithDuration(70.0, animations: {
+                self.trainImage2.frame = CGRectMake(256.0 - self.trainImage2.frame.size.width/2, 615, self.trainImage2.frame.size.width, self.trainImage2.frame.size.height)
+            })
+            
+        }
     }
-    func SetLabel(index: Int)
+    
+    func SetLabel()
     {
-        posLabel.text = Upward[index].arriveStatus
-        print(Upward[index].arriveStatus)
-        destLabel.text = Upward[index].trainDestination
-        print(Upward[index].trainDestination)
-        
-        posLabel2.text = Upward[index].arriveStatus
-        print(Upward[index].arriveStatus)
-        destLabel2.text = Upward[index].trainDestination
-        print(Upward[index].trainDestination)
+        if Upward.count != 0
+        {
+            posLabel.text = realtimeinfo[0].arriveStatus
+            print(realtimeinfo[0].arriveStatus)
+            destLabel.text = realtimeinfo[0].trainDestination
+            print(realtimeinfo[0].trainDestination)
+            
+            if realtimeinfo.count > 1
+            {
+                posLabel2.text = realtimeinfo[1].arriveStatus
+                print(realtimeinfo[1].arriveStatus)
+                destLabel2.text = realtimeinfo[1].trainDestination
+                print(realtimeinfo[1].trainDestination)
+            }
+
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

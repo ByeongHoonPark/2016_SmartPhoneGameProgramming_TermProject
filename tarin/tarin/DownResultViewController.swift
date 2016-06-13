@@ -46,10 +46,7 @@ class DownResultViewController: UIViewController {
         var trimmedtext: String = downCurrentStationNameLabel.text!
         if downCurrentStationNameLabel.text!.lowercaseString.containsString(String("(경의중앙선)").lowercaseString)
         {
-            //encodedString?.removeRange(Range<String.Index>(start: encodedString!.endIndex.advancedBy(-9),end: encodedString!.endIndex))
-            //trimmedtext = nameLabelText
             trimmedtext.removeRange(Range<String.Index>(start: trimmedtext.endIndex.advancedBy(-7), end: trimmedtext.endIndex))
-            print(trimmedtext)
         }
         ParsingData.beginParsing(trimmedtext)
         
@@ -60,7 +57,6 @@ class DownResultViewController: UIViewController {
             return station.updnLine == "하행" || station.updnLine == "내선"
         })
         
-        print("gg")
         for var index in 0 ..< Downward.count
         {
             var line = 0
@@ -68,7 +64,6 @@ class DownResultViewController: UIViewController {
             switch Downward[index].subWayId {
             case "1001":
                 line = 1
-                
                 break
             case "1002":
                 line = 2
@@ -115,32 +110,13 @@ class DownResultViewController: UIViewController {
             default:
                 break
             }
+            
             if LineNum == line
             {
-                SetLabel(index)
+                realtimeinfo.append(Downward[index])
             }
         }
-        print("1")
-        //        posLabel.text = Upward[0].arriveStatus
-        //        print(Upward[0].arriveStatus)
-        //        destLabel.text = Upward[0].trainDestination
-        //        print(Upward[0].trainDestination)
-        //
-        //        posLabel2.text = Downward[0].arriveStatus
-        //        print(Downward[0].arriveStatus)
-        //        destLabel2.text = Upward[0].trainDestination
-        //        print(Downward[0].trainDestination)
-        
-        //  destLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("행선지") as! NSString as String
-        // posLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("도착정보") as! NSString as String
-        //destLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("행선지") as! NSString as String
-        // ParsingData.posts.filter(<#T##includeElement: (AnyObject) throws -> Bool##(AnyObject) throws -> Bool#>)
-        
-        //        posLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("도착정보") as! NSString as String
-        //        destLabel.text = ParsingData.posts.objectAtIndex(0).valueForKey("행선지") as! NSString as String
-        //        posLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("도착정보") as! NSString as String
-        //        destLabel2.text = ParsingData.posts.objectAtIndex(2).valueForKey("행선지") as! NSString as String
-        
+        SetLabel()
     }
     override func viewDidAppear(animated: Bool) {
         if downCurrentStateLabel.text! == "전역 도착"
@@ -150,7 +126,6 @@ class DownResultViewController: UIViewController {
             firsttarin.origin.x = 256 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
             self.trainImage.frame = firsttarin
-            //self.trainImage
         }
         else if downCurrentStateLabel.text! == "전역 출발"
         {
@@ -162,7 +137,6 @@ class DownResultViewController: UIViewController {
             UIView.animateWithDuration(70.0, animations: {
                 self.trainImage.frame = CGRectMake(400.0 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
             })
-            //self.trainImage
         }
         else if downCurrentStateLabel.text! == "\(downStationNameLabel.text!) 도착"
         {
@@ -171,7 +145,6 @@ class DownResultViewController: UIViewController {
             firsttarin.origin.x = 512 - self.trainImage.frame.size.width/2
             firsttarin.origin.y = 281
             self.trainImage.frame = firsttarin
-            //self.trainImage
         }
         else if downCurrentStateLabel.text! == "\(downStationNameLabel.text!) 진입"
         {
@@ -183,7 +156,6 @@ class DownResultViewController: UIViewController {
             UIView.animateWithDuration(30.0, animations: {
                 self.trainImage.frame = CGRectMake(512 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
             })
-            //self.trainImage
         }
         else
         {
@@ -194,24 +166,77 @@ class DownResultViewController: UIViewController {
             UIView.animateWithDuration(70.0, animations: {
                 self.trainImage.frame = CGRectMake(256.0 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
             })
-            
         }
         
-        //        UIView.animateWithDuration(50.0, animations: {
-        //            self.trainImage.frame = CGRectMake(256.0 - self.trainImage.frame.size.width/2, 281.0, self.trainImage.frame.size.width, self.trainImage.frame.size.height)
-        //        })
+        if currentStateLabel2.text! == "전역 도착"
+        {
+            print(currentStateLabel2.text!)
+            var firsttarin = self.tarinImage2.frame
+            firsttarin.origin.x = 256 - self.tarinImage2.frame.size.width/2
+            firsttarin.origin.y = 620
+            self.tarinImage2.frame = firsttarin
+        }
+        else if currentStateLabel2.text! == "전역 출발"
+        {
+            print(currentStateLabel2.text!)
+            var firsttarin = self.tarinImage2.frame
+            firsttarin.origin.x = 256 - self.tarinImage2.frame.size.width/2
+            firsttarin.origin.y = 620
+            self.tarinImage2.frame = firsttarin
+            UIView.animateWithDuration(70.0, animations: {
+                self.tarinImage2.frame = CGRectMake(400.0 - self.tarinImage2.frame.size.width/2, 620, self.tarinImage2.frame.size.width, self.tarinImage2.frame.size.height)
+            })
+        }
+        else if currentStateLabel2.text! == "\(downStationNameLabel.text!) 도착"
+        {
+            print(downCurrentStateLabel.text!)
+            var firsttarin = self.tarinImage2.frame
+            firsttarin.origin.x = 512 - self.tarinImage2.frame.size.width/2
+            firsttarin.origin.y = 620
+            self.tarinImage2.frame = firsttarin
+        }
+        else if currentStateLabel2.text! == "\(downStationNameLabel.text!) 진입"
+        {
+            print(currentStateLabel2.text!)
+            var firsttarin = self.tarinImage2.frame
+            firsttarin.origin.x = 400.0 - self.tarinImage2.frame.size.width/2
+            firsttarin.origin.y = 620
+            self.tarinImage2.frame = firsttarin
+            UIView.animateWithDuration(30.0, animations: {
+                self.tarinImage2.frame = CGRectMake(512 - self.tarinImage2.frame.size.width/2, 620, self.tarinImage2.frame.size.width, self.tarinImage2.frame.size.height)
+            })
+        }
+        else
+        {
+            var firsttarin = self.tarinImage2.frame
+            firsttarin.origin.x = 100 - self.tarinImage2.frame.size.width/2
+            firsttarin.origin.y = 620
+            self.tarinImage2.frame = firsttarin
+            UIView.animateWithDuration(70.0, animations: {
+                self.tarinImage2.frame = CGRectMake(256.0 - self.tarinImage2.frame.size.width/2, 620, self.tarinImage2.frame.size.width, self.tarinImage2.frame.size.height)
+            })
+        }
+
     }
-    func SetLabel(index: Int)
+    func SetLabel()
     {
-        downCurrentStateLabel.text = Downward[index].arriveStatus
-        print(Upward[index].arriveStatus)
-        downDestLabel.text = Downward[index].trainDestination
-        print(Upward[index].trainDestination)
+        if Downward.count != 0
+        {
+            downCurrentStateLabel.text = realtimeinfo[0].arriveStatus
+            print(realtimeinfo[0].arriveStatus)
+            downDestLabel.text = realtimeinfo[0].trainDestination
+            print(realtimeinfo[0].trainDestination)
+            if realtimeinfo.count > 1
+            {
+                currentStateLabel2.text = realtimeinfo[1].arriveStatus
+                print(realtimeinfo[1].arriveStatus)
+                destLabel2.text = Downward[1].trainDestination
+                print(realtimeinfo[1].trainDestination)
+            }
+
+        }
         
-        currentStateLabel2.text = Downward[index].arriveStatus
-        print(Upward[index].arriveStatus)
-        destLabel2.text = Downward[index].trainDestination
-        print(Upward[index].trainDestination)
+        
     }
 
 
