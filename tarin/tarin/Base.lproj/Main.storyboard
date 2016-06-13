@@ -795,16 +795,103 @@
         <!--About View Controller-->
         <scene sceneID="VwI-0E-muK">
             <objects>
-                <viewController title="About" id="2iR-9r-Hq6" userLabel="About View Controller" sceneMemberID="viewController">
+                <viewController title="About" id="2iR-9r-Hq6" userLabel="About View Controller" customClass="AboutViewController" customModule="tarin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gdx-bl-VH1"/>
                         <viewControllerLayoutGuide type="bottom" id="ONW-Dt-5hV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FGb-rf-66C">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seoul.png" translatesAutoresizingMaskIntoConstraints="NO" id="pGw-i7-8Ul">
+                                <rect key="frame" x="282" y="199" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OpenAPI 제공" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-h3-aQL">
+                                <rect key="frame" x="303" y="139" width="178" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="서울특별시" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akc-NO-KoL">
+                                <rect key="frame" x="351" y="206" width="130" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seoulOpenData.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hpw-Dg-gY0">
+                                <rect key="frame" x="276" y="262" width="221" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지하철노선도 이미지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-JQ-BPx">
+                                <rect key="frame" x="263" y="378" width="242" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="네이버" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bt5-QB-r1M">
+                                <rect key="frame" x="419" y="441" width="78" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NAVER_CI_Green.png" translatesAutoresizingMaskIntoConstraints="NO" id="hxJ-U9-IYW">
+                                <rect key="frame" x="271" y="448" width="117" height="21"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="아이콘 이미지" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-8o-b4l">
+                                <rect key="frame" x="302" y="526" width="164" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flaticon-logo-footer.png" translatesAutoresizingMaskIntoConstraints="NO" id="S2w-Yn-XRP">
+                                <rect key="frame" x="308" y="570" width="152" height="85"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="http://www.flaticon.com/authors/madebyoliver" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-VW-Bvu">
+                                <rect key="frame" x="231" y="767" width="306" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="http://www.flaticon.com/authors/freepik" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ewv-Ts-jR4">
+                                <rect key="frame" x="254" y="860" width="265" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="okE-k3-fTt">
+                                <rect key="frame" x="300" y="662" width="169" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Flaticon
+http://www.flaticon.com/</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="159-madebyoliver.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yDq-83-Hds">
+                                <rect key="frame" x="359" y="709" width="50" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-freepik.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-b3-aRV">
+                                <rect key="frame" x="359" y="802" width="50" height="50"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="http://www.flaticon.com/authors/google" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y2o-iq-Aya">
+                                <rect key="frame" x="253" y="950" width="263" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="55-google.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UVz-Nq-j9b">
+                                <rect key="frame" x="359" y="901" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="Madebyoliver" destination="hgk-VW-Bvu" id="Xac-w7-QmK"/>
+                        <outlet property="flaticon" destination="okE-k3-fTt" id="XQ3-wh-hvB"/>
+                        <outlet property="freepik" destination="ewv-Ts-jR4" id="wnV-1j-GW6"/>
+                        <outlet property="google" destination="y2o-iq-Aya" id="c4H-Qc-c00"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpN-rc-9ZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1595,7 +1682,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1-freepik.jpg" width="300" height="300"/>
+        <image name="159-madebyoliver.jpg" width="300" height="300"/>
         <image name="4.png" width="100" height="100"/>
+        <image name="55-google.jpg" width="300" height="300"/>
+        <image name="NAVER_CI_Green.png" width="808" height="150"/>
         <image name="_pin.png" width="25" height="25"/>
         <image name="_tube-scheme.png" width="25" height="25"/>
         <image name="bike.png" width="512" height="512"/>
@@ -1603,6 +1694,7 @@
         <image name="elevator.png" width="512" height="512"/>
         <image name="fax.png" width="512" height="512"/>
         <image name="feeder.png" width="512" height="512"/>
+        <image name="flaticon-logo-footer.png" width="1920" height="1105"/>
         <image name="info (1).png" width="512" height="512"/>
         <image name="info.png" width="24" height="24"/>
         <image name="linemap_naver.png" width="2948" height="2126"/>
@@ -1611,6 +1703,8 @@
         <image name="placeholder.png" width="512" height="512"/>
         <image name="question.png" width="512" height="512"/>
         <image name="route.png" width="512" height="512"/>
+        <image name="seoul.png" width="945" height="945"/>
+        <image name="seoulOpenData.jpg" width="221" height="54"/>
         <image name="silhouette-on-wheelchair.png" width="512" height="512"/>
         <image name="telephone.png" width="512" height="512"/>
         <image name="train.png" width="512" height="512"/>
