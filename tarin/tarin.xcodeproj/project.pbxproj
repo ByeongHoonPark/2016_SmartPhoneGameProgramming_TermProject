@@ -94,7 +94,7 @@
 		A1039D491D06766300EED94D /* 에버라인.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "에버라인.png"; sourceTree = "<group>"; };
 		A1039D4B1D067B8E00EED94D /* SearchStationNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStationNameViewController.swift; sourceTree = "<group>"; };
 		A1039D4D1D067F8F00EED94D /* StationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInfo.swift; sourceTree = "<group>"; };
-		A11D95661CFAC1630002B73D /* tarin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tarin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11D95661CFAC1630002B73D /* 실시간 지하철.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "실시간 지하철.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11D95691CFAC1630002B73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A11D956B1CFAC1630002B73D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A11D956E1CFAC1630002B73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 		A11D95671CFAC1630002B73D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A11D95661CFAC1630002B73D /* tarin.app */,
+				A11D95661CFAC1630002B73D /* 실시간 지하철.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 			);
 			name = tarin;
 			productName = tarin;
-			productReference = A11D95661CFAC1630002B73D /* tarin.app */;
+			productReference = A11D95661CFAC1630002B73D /* 실시간 지하철.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -617,9 +617,11 @@
 				);
 				INFOPLIST_FILE = tarin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kpu.2016class.tarin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "실시간 지하철";
 				SWIFT_OBJC_BRIDGING_HEADER = "tarin/tarin-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -638,9 +640,11 @@
 				);
 				INFOPLIST_FILE = tarin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ON_DEMAND_RESOURCES_INITIAL_INSTALL_TAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kpu.2016class.tarin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "실시간 지하철";
 				SWIFT_OBJC_BRIDGING_HEADER = "tarin/tarin-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
